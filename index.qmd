@@ -2,7 +2,7 @@
 format:
   revealjs:
     css: style.css
-    theme: simple
+    theme: dracula
     slide-number: true
     code-line-numbers: false
     preview-links: auto
@@ -74,7 +74,7 @@ Source code for these slides can be found [on GitHub](https://github.com/Indraje
 - Enterprise risks when using FOSS
 - Automated tools for managing open source dependencies
 
-::: {style="background-color: #FFFBC1; padding: 20px; border-radius: 25px; text-align: center;"}
+::: {style="background-color: #44475a; padding: 20px; border-radius: 25px; text-align: center; border: 2px solid #ffb86c; color: #f8f8f2;"}
 
 ***Scope***
 <br>
@@ -136,7 +136,7 @@ Created to develop a free Unix-like operating system.
 
 Established to support the free software movement.
 
-::: {style="background-color: #e3f2fd; padding: 12px; border-radius: 10px; margin-top: 15px;"}
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-top: 15px; border: 2px solid #8be9fd; color: #f8f8f2;"}
 
 **The Four Freedoms:**
 Run, study, modify, and share software freely.
@@ -196,7 +196,7 @@ Open Source Definition
 
 ## What are software licenses? {.smaller}
 
-::: {style="background-color: #e3f2fd; padding: 20px; border-radius: 15px; margin: 15px 0;"}
+::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin: 15px 0; border: 2px solid #8be9fd; color: #f8f8f2;"}
 
 **A software license is a legal instrument** governing the use, modification, and distribution of software.
 
@@ -231,7 +231,7 @@ The free software and open source movements led to two main license types:
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px; font-size: 0.85em;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; font-size: 0.85em; border: 2px solid #8be9fd; color: #f8f8f2;"}
 
 ::: {style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;"}
 Reciprocal (Copyleft)
@@ -253,7 +253,7 @@ Reciprocal (Copyleft)
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #f3e5f5; padding: 15px; border-radius: 10px; font-size: 0.85em;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; font-size: 0.85em; border: 2px solid #bd93f9; color: #f8f8f2;"}
 
 ::: {style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;"}
 Permissive
@@ -283,7 +283,7 @@ Permissive
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2;"}
 
 **Key Features:**
 
@@ -317,7 +317,7 @@ You cannot:
 
 ::::
 
-::: {style="background-color: #fff3e0; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px;"}
+::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px; border: 2px solid #ffb86c; color: #f8f8f2;"}
 **"Share-alike" requirement ensures software stays open**
 :::
 
@@ -329,7 +329,7 @@ You cannot:
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #f3e5f5; padding: 15px; border-radius: 10px;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2;"}
 
 **Key Features:**
 
@@ -364,7 +364,7 @@ Only requirement:
 
 ::::
 
-::: {style="background-color: #e8f5e9; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px;"}
+::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px; border: 2px solid #50fa7b; color: #f8f8f2;"}
 **Maximum flexibility for developers and businesses**
 :::
 
@@ -372,7 +372,7 @@ Only requirement:
 
 ## When do licenses matter? {.smaller}
 
-::: {style="background-color: #fff3e0; padding: 20px; border-radius: 15px; margin: 15px 0; text-align: center; font-size: 1.1em;"}
+::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin: 15px 0; text-align: center; font-size: 1.1em; border: 2px solid #ffb86c; color: #f8f8f2;"}
 
 License obligations are triggered by **distribution**
 
@@ -420,7 +420,7 @@ License obligations are triggered by **distribution**
 
 **What you need to do:**
 
-::: {style="background-color: #e8f5e9; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #50fa7b; color: #f8f8f2;"}
 
 1. **Track all FOSS** components in your products
 2. **Understand license obligations** for each component
@@ -430,7 +430,7 @@ License obligations are triggered by **distribution**
 
 :::
 
-::: {style="background-color: #ffebee; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #ff5555; color: #f8f8f2;"}
 
 **Non-compliance consequences:**
 
@@ -450,7 +450,7 @@ License obligations are triggered by **distribution**
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #fff3e0; padding: 15px; border-radius: 10px; margin-bottom: 15px;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #ffb86c; color: #f8f8f2;"}
 
 **1. Lack of awareness**
 
@@ -461,7 +461,7 @@ License obligations are triggered by **distribution**
 
 :::
 
-::: {style="background-color: #ffebee; padding: 15px; border-radius: 10px;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2;"}
 
 **2. Security vulnerabilities**
 
@@ -488,7 +488,7 @@ License obligations are triggered by **distribution**
 
 ::: {.column width="65%" .fragment}
 
-::: {style="background-color: #ffebee; padding: 12px; border-radius: 10px; margin-bottom: 10px;"}
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-bottom: 10px; border: 2px solid #ff5555; color: #f8f8f2;"}
 
 **The Incident:**
 
@@ -497,7 +497,7 @@ License obligations are triggered by **distribution**
 
 :::
 
-::: {style="background-color: #fff3e0; padding: 12px; border-radius: 10px;"}
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2;"}
 
 **The Cause:**
 
@@ -528,7 +528,7 @@ Failed to patch a known vulnerability
 
 Manual tracking is not scalable:
 
-::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #8be9fd; color: #f8f8f2;"}
 
 **Modern applications can have:**
 
@@ -618,7 +618,7 @@ Enterprise support, extensive database, advanced reporting
 
 ## Integrating tools into your workflow {.smaller}
 
-::: {style="background-color: #e8f5e9; padding: 15px; border-radius: 10px; margin: 10px 0; font-size: 0.9em;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; font-size: 0.9em; border: 2px solid #50fa7b; color: #f8f8f2;"}
 
 - **Scan early and often** - Integrate into CI/CD pipeline
 - **Set clear policies** - Define acceptable risk levels
@@ -650,31 +650,31 @@ flowchart LR
 
 ## Key takeaways {.smaller}
 
-::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #8be9fd; color: #f8f8f2;"}
 
 **FOSS is everywhere** - Understand what you're using
 
 :::
 
-::: {style="background-color: #f3e5f5; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #bd93f9; color: #f8f8f2;"}
 
 **Licenses matter** - Know the difference between reciprocal and permissive
 
 :::
 
-::: {style="background-color: #fff3e0; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #ffb86c; color: #f8f8f2;"}
 
 **Distribution triggers obligations** - Understand when licenses apply
 
 :::
 
-::: {style="background-color: #ffebee; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #ff5555; color: #f8f8f2;"}
 
 **Security is critical** - Don't be the next Equifax
 
 :::
 
-::: {style="background-color: #e8f5e9; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #50fa7b; color: #f8f8f2;"}
 
 **Automate everything** - Use tools like Trivy or Black Duck
 
