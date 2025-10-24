@@ -1,0 +1,727 @@
+---
+format:
+  revealjs:
+    css: style.css
+    theme: simple
+    slide-number: true
+    code-line-numbers: false
+    preview-links: auto
+    keyboard: true
+    touch: true
+    help: true
+    include-in-header: meta-tags.html
+    link-external-newwindow: true
+    mermaid-format: png
+revealjs-plugins:
+  - fontawesome
+execute:
+  echo: true
+  eval: false
+keywords: ["FOSS", "open-source", "enterprise", "software-licensing", "security"]
+description-meta: "Understanding Free and Open Source Software for enterprise: licenses, risks, and automated tools for managing open source dependencies."
+license: "CC0 1.0 Universal"
+pagetitle: "FOSS for Enterprise"
+author-meta: "Indrajeet Patil"
+date-meta: "`r Sys.time()`"
+lang: "en"
+dir: "ltr"
+image: "media/dependency.png"
+image-alt: "FOSS for Enterprise - Software dependency illustration from xkcd"
+canonical-url: "https://indrajeetpatil.github.io/foss-for-enterprise/"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+## FOSS for Enterprise {style="margin-top: 2em; margin-bottom: 1em;"}
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+::: {style="margin-top: 1em; margin-bottom: 1em;"}
+
+::: {style="font-size: 0.9em; font-weight: bold;"}
+Understanding Open Source Licenses, Risks, and Compliance
+:::
+
+::: {style="font-size: 0.8em; margin-top: 1em;"}
+Indrajeet Patil
+:::
+
+:::
+
+:::
+
+::: {.column width="40%"}
+
+[![](media/dependency.png){width="400" height="400" fig-alt="Software dependency illustration"}](https://xkcd.com/2347/)
+
+:::
+
+::::
+
+::: {style="text-align: center; font-size: 0.7em; margin-top: 2em; color: #666;"}
+Source code for these slides can be found [on GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/).
+:::
+
+## What you'll learn today {.smaller}
+
+- History of Free and Open Source Software (FOSS)
+- Key differences between software licenses
+- Legal implications of using open source software
+- Enterprise risks when using FOSS
+- Automated tools for managing open source dependencies
+
+::: {style="background-color: #FFFBC1; padding: 20px; border-radius: 25px; text-align: center;"}
+
+***Scope***
+<br>
+<br>
+This presentation focuses on **inbound FOSS** (using open source in your products).
+<br>
+**Outbound FOSS** (releasing your software as open source) is out of scope.
+
+:::
+
+# History of FOSS
+
+## In the beginning... {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+
+**Software was free**
+
+- 1950s-1970s: Software bundled with hardware
+- Source code shared freely among researchers
+- Collaboration was the norm
+
+![](https://cdn-icons-png.flaticon.com/512/2942/2942156.png){width="200" fig-alt="Collaboration icon"}
+
+:::
+
+::: {.column width="50%" .fragment}
+
+**Then came commercialization**
+
+- Late 1970s-1980s: Software became a product
+- Companies realized revenue potential
+- Proprietary licenses became standard
+- Source code became trade secret
+
+![](https://cdn-icons-png.flaticon.com/512/3135/3135706.png){width="200" fig-alt="Business revenue icon"}
+
+:::
+
+::::
+
+## Richard Stallman and Free Software {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%" .fragment}
+
+**The MIT Printer Incident (1980)**
+
+Stallman couldn't fix a printer because source code was unavailable.
+
+**Response: GNU Project (1983)**
+
+Created to develop a free Unix-like operating system.
+
+**Free Software Foundation (1985)**
+
+Established to support the free software movement.
+
+::: {style="background-color: #e3f2fd; padding: 12px; border-radius: 10px; margin-top: 15px;"}
+
+**The Four Freedoms:**
+Run, study, modify, and share software freely.
+
+:::
+
+:::
+
+::: {.column width="40%"}
+
+![](media/free_as_in_freedom.jpg){width="300" fig-alt="Free as in freedom"}
+
+::: {style="text-align: center; font-style: italic; margin-top: 10px;"}
+"Free as in freedom, not free as in beer"
+:::
+
+:::
+
+::::
+
+## Open Source Movement (1998) {.smaller}
+
+:::: {.columns style="align-items: flex-start;"}
+
+::: {.column width="45%"}
+
+::: {style="font-size: 0.85em;"}
+
+**Different focus, similar goals**
+
+- Term coined to emphasize practical benefits
+- Focus on development methodology
+- Less ideological than "free software"
+- More business-friendly messaging
+
+**Open Source Initiative (OSI)** ![](media/osi.svg){width="40" style="vertical-align: middle; margin-left: 5px;"}
+
+Maintains the Open Source Definition with 10 criteria.
+
+:::
+
+:::
+
+::: {.column width="55%"}
+
+![](media/osd.jpg){style="max-width: 100%; height: auto;" fig-alt="Open Source Definition"}
+
+::: {style="text-align: center; font-style: italic; margin-top: 10px;"}
+Open Source Definition
+:::
+
+:::
+
+::::
+
+# Software Licenses
+
+## What are software licenses? {.smaller}
+
+::: {style="background-color: #e3f2fd; padding: 20px; border-radius: 15px; margin: 15px 0;"}
+
+**A software license is a legal instrument** governing the use, modification, and distribution of software.
+
+:::
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+**Why are they important?**
+
+- Software is protected by **copyright** law by default
+- Without a license, you have **no legal right** to use, copy, or modify software
+- Licenses grant permissions while setting conditions
+- Violating license terms can result in legal action
+
+:::
+
+::: {.column width="35%"}
+
+![](media/laurent.jpg){width="250" fig-alt="Laurent illustration"}
+
+:::
+
+::::
+
+## Two license philosophies {.smaller}
+
+The free software and open source movements led to two main license types:
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px; font-size: 0.85em;"}
+
+::: {style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;"}
+Reciprocal (Copyleft)
+:::
+
+**Origin:** Free Software Movement
+
+**Philosophy:** Preserve freedom for all users
+
+**Key Feature:** Derivatives must use same license
+
+**Examples:** GPL, AGPL, MPL
+
+**Goal:** Ensure software remains free
+
+:::
+
+:::
+
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #f3e5f5; padding: 15px; border-radius: 10px; font-size: 0.85em;"}
+
+::: {style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;"}
+Permissive
+:::
+
+**Origin:** Academic institutions, OSI
+
+**Philosophy:** Maximum freedom to developers
+
+**Key Feature:** Minimal restrictions
+
+**Examples:** MIT, BSD, Apache
+
+**Goal:** Enable broad adoption and use
+
+:::
+
+:::
+
+::::
+
+## Reciprocal License Example: GPL-2 {.smaller}
+
+**GNU General Public License v2.0**
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px;"}
+
+**Key Features:**
+
+- **Strong copyleft** - Derivatives must be GPL-2
+- **Source code disclosure** required upon distribution
+- **Same license terms** for all recipients
+- **Patent grants** (implied)
+- Most notably used by **Linux kernel**
+
+:::
+
+:::
+
+::: {.column width="50%" .fragment}
+
+**When you distribute GPL-2 software:**
+
+```text
+You must:
+✓ Provide source code
+✓ Include original license and copyright
+✓ Document your changes
+✓ License your entire work under GPL-2
+
+You cannot:
+✗ Make it proprietary
+✗ Sublicense under different terms
+```
+
+:::
+
+::::
+
+::: {style="background-color: #fff3e0; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px;"}
+**"Share-alike" requirement ensures software stays open**
+:::
+
+## Permissive License Example: MIT {.smaller}
+
+**MIT License**
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #f3e5f5; padding: 15px; border-radius: 10px;"}
+
+**Key Features:**
+
+- **Minimal restrictions** on use and redistribution
+- **Can be used in proprietary** software
+- **No source code disclosure** requirement
+- Only requires **copyright notice** preservation
+- Most popular license on GitHub
+
+:::
+
+:::
+
+::: {.column width="50%" .fragment}
+
+**What you can do with MIT software:**
+
+```text
+Permissions:
+✓ Use commercially
+✓ Modify as needed
+✓ Distribute freely
+✓ Sublicense (even as proprietary)
+✓ Keep modifications private
+
+Only requirement:
+- Include original MIT license text
+- Include copyright notice
+```
+
+:::
+
+::::
+
+::: {style="background-color: #e8f5e9; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px;"}
+**Maximum flexibility for developers and businesses**
+:::
+
+# Legal Aspects
+
+## When do licenses matter? {.smaller}
+
+::: {style="background-color: #fff3e0; padding: 20px; border-radius: 15px; margin: 15px 0; text-align: center; font-size: 1.1em;"}
+
+License obligations are triggered by **distribution**
+
+:::
+
+**What is distribution?**
+
+- Transferring a copy of software from one legal entity to another
+- Providing software binaries or source code to external parties
+- **Internal use** within your organization is generally **NOT** distribution
+
+**Examples:**
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+
+**IS distribution:**
+
+- Shipping software to customers
+- Publishing container images publicly
+- Providing software to contractors
+- Selling products containing FOSS
+
+:::
+
+::: {.column width="50%" .fragment}
+
+**NOT distribution:**
+
+- Using FOSS internally
+- Running services on your servers
+- SaaS applications (usually)*
+- Internal tool deployment
+
+:::
+
+::::
+
+::: {style="font-size: 0.8em; margin-top: 10px; font-style: italic;"}
+*Exception: AGPL requires source disclosure for network use
+:::
+
+## License compliance matters {.smaller}
+
+**What you need to do:**
+
+::: {style="background-color: #e8f5e9; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+1. **Track all FOSS** components in your products
+2. **Understand license obligations** for each component
+3. **Maintain attribution** (copyright notices, licenses)
+4. **Provide source code** when required (copyleft licenses)
+5. **Document your compliance** process
+
+:::
+
+::: {style="background-color: #ffebee; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**Non-compliance consequences:**
+
+- Copyright infringement lawsuits
+- Forced source code disclosure
+- Injunctions preventing product sales
+- Reputational damage
+- Financial penalties
+
+:::
+
+# Enterprise Risks
+
+## Common FOSS risks for enterprises {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #fff3e0; padding: 15px; border-radius: 10px; margin-bottom: 15px;"}
+
+**1. Lack of awareness**
+
+- Developers add dependencies unknowingly
+- Transitive dependencies go unnoticed
+- License obligations misunderstood
+- No inventory of FOSS components
+
+:::
+
+::: {style="background-color: #ffebee; padding: 15px; border-radius: 10px;"}
+
+**2. Security vulnerabilities**
+
+- Outdated packages with known CVEs
+- Unpatched critical vulnerabilities
+- Supply chain attacks
+- Abandoned projects
+
+:::
+
+:::
+
+::: {.column width="50%" .fragment}
+
+![](https://cdn-icons-png.flaticon.com/512/6195/6195699.png){width="300" fig-alt="Security risk icon"}
+
+:::
+
+::::
+
+## Case Study: Equifax Breach (2017) {.smaller}
+
+:::: {.columns}
+
+::: {.column width="65%" .fragment}
+
+::: {style="background-color: #ffebee; padding: 12px; border-radius: 10px; margin-bottom: 10px;"}
+
+**The Incident:**
+
+- **147.9M** Americans + **15.2M** British citizens affected
+- One of the largest identity theft breaches
+
+:::
+
+::: {style="background-color: #fff3e0; padding: 12px; border-radius: 10px;"}
+
+**The Cause:**
+
+- **Apache Struts 2 vulnerability** (CVE-2017-5638)
+- Patch released **March 6, 2017**
+- Breach began **May 12, 2017** (2 months later!)
+- Continued undetected for **76 days**
+
+:::
+
+:::
+
+::: {.column width="35%" .fragment}
+
+![](https://cdn-icons-png.flaticon.com/512/4401/4401403.png){width="220" fig-alt="Data breach icon"}
+
+::: {style="text-align: center; font-size: 0.85em; font-weight: bold; margin-top: 15px; font-style: italic;"}
+Failed to patch a known vulnerability
+:::
+
+:::
+
+::::
+
+# Automated Tools
+
+## Why automate FOSS management? {.smaller}
+
+Manual tracking is not scalable:
+
+::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**Modern applications can have:**
+
+- Hundreds or thousands of direct dependencies
+- Tens of thousands of transitive dependencies
+- Multiple package managers (npm, pip, Maven, etc.)
+- Constantly evolving vulnerability landscape
+
+:::
+
+**Automated tools help you:**
+
+- Discover all FOSS components in your codebase
+- Identify security vulnerabilities (CVEs)
+- Detect license compliance issues
+- Generate Software Bill of Materials (SBOM)
+- Monitor for new vulnerabilities
+
+## Open Source Tool: Trivy {.smaller}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+**[Trivy](https://trivy.dev/)** - Comprehensive security scanner by Aqua Security
+
+- Vulnerability detection
+- License scanning
+- Secret detection
+- SBOM generation
+
+**Scan a container image:**
+
+```bash
+trivy image nginx:latest
+```
+
+::: {style="font-size: 0.85em; margin-top: 10px; font-style: italic;"}
+Free, open-source, widely adopted in CI/CD pipelines
+:::
+
+:::
+
+::: {.column width="30%"}
+
+![](media/trivy.png){width="180" fig-alt="Trivy logo"}
+
+:::
+
+::::
+
+## Commercial Tool: Black Duck {.smaller}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+**[Black Duck](https://www.blackduck.com/)** by Synopsys - Enterprise-grade SCA platform
+
+- Comprehensive vulnerability management
+- License compliance automation
+- Supply chain risk assessment
+- Policy enforcement
+
+**Configuration (application.properties):**
+
+```properties
+blackduck.url=https://blackduck.example.com
+blackduck.api.token=${BLACKDUCK_TOKEN}
+detect.project.name=MyProject
+detect.policy.check.fail.on.severities=BLOCKER,CRITICAL
+```
+
+::: {style="font-size: 0.85em; margin-top: 10px; font-style: italic;"}
+Enterprise support, extensive database, advanced reporting
+:::
+
+:::
+
+::: {.column width="30%"}
+
+![](media/431461.png){width="180" fig-alt="Black Duck logo"}
+
+:::
+
+::::
+
+## Integrating tools into your workflow {.smaller}
+
+::: {style="background-color: #e8f5e9; padding: 15px; border-radius: 10px; margin: 10px 0; font-size: 0.9em;"}
+
+- **Scan early and often** - Integrate into CI/CD pipeline
+- **Set clear policies** - Define acceptable risk levels
+- **Automate fixes** - Use dependency update tools (Dependabot, Renovate)
+- **Monitor continuously** - New vulnerabilities discovered daily
+- **Educate developers** - Make security everyone's responsibility
+
+:::
+
+```{mermaid}
+%%| eval: true
+%%| echo: false
+flowchart LR
+    A[Developer commits] --> B[CI/CD Pipeline]
+    B --> C[FOSS Scanner]
+    C --> D{Vulnerabilities?}
+    D -->|Yes| E[Block/Alert]
+    D -->|No| F[Deploy]
+    E --> G[Create ticket]
+    G --> H[Developer fixes]
+    H --> A
+
+    style C fill:#e3f2fd
+    style E fill:#ffebee
+    style F fill:#e8f5e9
+```
+
+# Summary
+
+## Key takeaways {.smaller}
+
+::: {style="background-color: #e3f2fd; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**FOSS is everywhere** - Understand what you're using
+
+:::
+
+::: {style="background-color: #f3e5f5; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**Licenses matter** - Know the difference between reciprocal and permissive
+
+:::
+
+::: {style="background-color: #fff3e0; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**Distribution triggers obligations** - Understand when licenses apply
+
+:::
+
+::: {style="background-color: #ffebee; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**Security is critical** - Don't be the next Equifax
+
+:::
+
+::: {style="background-color: #e8f5e9; padding: 15px; border-radius: 10px; margin: 10px 0;"}
+
+**Automate everything** - Use tools like Trivy or Black Duck
+
+:::
+
+# Thank You
+
+Happy FOSSing! 😊
+
+<br>
+
+::: {style="text-align: center; font-size: 0.7em;"}
+
+Check out my other [slide decks](https://sites.google.com/site/indrajeetspatilmorality/presentations) on software development best practices
+
+:::
+
+::: {style="text-align: center; font-size: 1em;"}
+
+[{{< fa brands linkedin >}}](https://www.linkedin.com/in/indrajeet-patil-ph-d-397865174/)
+&nbsp;&nbsp;
+[{{< fa brands github >}}](http://github.com/IndrajeetPatil)
+&nbsp;&nbsp;
+[{{< fa solid envelope >}}](mailto:patilindrajeet.science@gmail.com)
+
+:::
+
+## References {.smaller data-visibility="uncounted"}
+
+:::{style="font-size: 25px;"}
+
+- Free Software Foundation. "What is Free Software?" <https://www.gnu.org/philosophy/free-sw.html>
+
+- Open Source Initiative. "The Open Source Definition." <https://opensource.org/osd>
+
+- GNU Project. "GNU General Public License v2.0." <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>
+
+- Open Source Initiative. "MIT License." <https://opensource.org/licenses/MIT>
+
+- U.S. House of Representatives. "The Equifax Data Breach Report." December 2018.
+
+- Aqua Security. "Trivy Documentation." <https://aquasecurity.github.io/trivy/>
+
+- Synopsys. "Black Duck Documentation." <https://synopsys.atlassian.net/wiki/spaces/INTDOCS/>
+
+- Choose a License. <https://choosealicense.com/>
+
+- TLDRLegal. "Software Licenses in Plain English." <https://www.tldrlegal.com/>
+
+:::
