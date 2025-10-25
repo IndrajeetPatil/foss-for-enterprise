@@ -118,74 +118,46 @@ This presentation focuses on **inbound FOSS** (using open source in your product
 
 ::::
 
-## Richard Stallman and Free Software {.smaller}
+## The FOSS Movement {.smaller}
 
 :::: {.columns}
 
-::: {.column width="60%" .fragment}
+::: {.column width="50%" .fragment}
 
-**The MIT Printer Incident (1980)**
+::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.7em;"}
 
-Stallman couldn't fix a printer because source code was unavailable.
+::: {style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 5px;"}
+Free Software
+:::
 
-**Response: GNU Project (1983)**
+::: {style="text-align: center;"}
+![](media/free_as_in_freedom.jpg){width="200" fig-alt="Free as in freedom"}
+:::
 
-Created to develop a free Unix-like operating system.
-
-**Free Software Foundation (1985)**
-
-Established to support the free software movement.
-
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-top: 15px; border: 2px solid #8be9fd; color: #f8f8f2;"}
-
-**The Four Freedoms:**
-Run, study, modify, and share software freely.
+- **Free Software Foundation (1985)**
+- **Four Freedoms:** <br>
+  Run, study, modify, and share
 
 :::
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%" .fragment}
 
-![](media/free_as_in_freedom.jpg){width="300" fig-alt="Free as in freedom"}
+::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.7em;"}
 
-::: {style="text-align: center; font-style: italic; margin-top: 10px;"}
-"Free as in freedom, not free as in beer"
+::: {style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 5px;"}
+Open Source
 :::
 
+::: {style="text-align: center;"}
+![](media/osi.svg){width="160" fig-alt="OSI logo"}
 :::
 
-::::
+- **Open Source Initiative (1998)**
+- **Open Source Definition:** <br>
+  10 criteria defining open source
 
-## Open Source Movement (1998) {.smaller}
-
-:::: {.columns style="align-items: flex-start;"}
-
-::: {.column width="45%"}
-
-::: {style="font-size: 0.85em;"}
-
-**Different focus, similar goals**
-
-- Term coined to emphasize practical benefits
-- Focus on development methodology
-- Less ideological than "free software"
-- More business-friendly messaging
-
-**Open Source Initiative (OSI)** ![](media/osi.svg){width="40" style="vertical-align: middle; margin-left: 5px;"}
-
-Maintains the Open Source Definition with 10 criteria.
-
-:::
-
-:::
-
-::: {.column width="55%"}
-
-![](media/osd.jpg){style="max-width: 100%; height: auto;" fig-alt="Open Source Definition"}
-
-::: {style="text-align: center; font-style: italic; margin-top: 10px;"}
-Open Source Definition
 :::
 
 :::
@@ -275,7 +247,7 @@ Permissive
 
 ::::
 
-## Reciprocal License Example: GPL-2 {.smaller}
+## Reciprocal License Example {.smaller}
 
 **GNU General Public License v2.0**
 
@@ -321,7 +293,7 @@ You cannot:
 **"Share-alike" requirement ensures software stays open**
 :::
 
-## Permissive License Example: MIT {.smaller}
+## Permissive License Example {.smaller}
 
 **MIT License**
 
@@ -418,19 +390,27 @@ License obligations are triggered by **distribution**
 
 ## License compliance matters {.smaller}
 
+:::: {.columns}
+
+::: {.column width="48%" style="margin-right: 2%;"}
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #50fa7b; color: #f8f8f2; font-size: 0.85em;"}
+
 **What you need to do:**
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #50fa7b; color: #f8f8f2;"}
-
-1. **Track all FOSS** components in your products
-2. **Understand license obligations** for each component
-3. **Maintain attribution** (copyright notices, licenses)
-4. **Provide source code** when required (copyleft licenses)
-5. **Document your compliance** process
+- **Track all FOSS** components in your products
+- **Understand license obligations** for each component
+- **Maintain attribution** (copyright notices, licenses)
+- **Provide source code** when required (copyleft licenses)
+- **Document your compliance** process
 
 :::
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #ff5555; color: #f8f8f2;"}
+:::
+
+::: {.column width="48%" style="margin-left: 2%;"}
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.85em;"}
 
 **Non-compliance consequences:**
 
@@ -441,6 +421,10 @@ License obligations are triggered by **distribution**
 - Financial penalties
 
 :::
+
+:::
+
+::::
 
 # Enterprise Risks
 
