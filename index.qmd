@@ -579,6 +579,80 @@ When a FOSS project is at the heart of your product, its sustainability becomes 
 
 ::::
 
+## Case Studies: Sustainability Failures {.smaller}
+
+**Real-world examples of FOSS sustainability crises:**
+
+::: {style="display: flex; gap: 15px; justify-content: space-between;"}
+
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
+
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/6897/6897039.png){width="60" fig-alt="Package removal icon"}
+:::
+
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[left-pad (2016)](https://en.wikipedia.org/wiki/Npm_left-pad_incident)
+:::
+
+::: {style="background-color: #ff5555; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Package Removal
+:::
+
+::: {style="flex-grow: 1;"}
+11 lines of code, 15M+ downloads. Maintainer removed package after npm dispute, breaking thousands of projects (React, Babel, Node).
+:::
+
+**Takeaway:** Tiny dependencies can create massive single points of failure
+
+:::
+
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
+
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/3588/3588314.png){width="60" fig-alt="Burnout icon"}
+:::
+
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[core-js (ongoing)](https://www.theregister.com/2023/02/15/corejs_russia_open_source/)
+:::
+
+::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Burnout & Underfunding
+:::
+
+::: {style="flex-grow: 1;"}
+9B+ downloads, 50% of top 10k websites. Solo maintainer earns ~$400/month, threatened to go closed-source. Receives hate for asking funding.
+:::
+
+**Takeaway:** Critical infrastructure runs on volunteer labor
+
+:::
+
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
+
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/2917/2917995.png){width="60" fig-alt="Sabotage icon"}
+:::
+
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[faker.js/colors.js (2022)](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/)
+:::
+
+::: {style="background-color: #ffb86c; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Maintainer Protest
+:::
+
+::: {style="flex-grow: 1;"}
+3.3B downloads (colors) + 272M (faker). Maintainer intentionally sabotaged libraries to protest Fortune 500s using free work without giving back.
+:::
+
+**Takeaway:** Frustrated maintainers can become security risks
+
+:::
+
+:::
+
 # Automated Tools
 
 ## Why automate FOSS management? {.smaller}
