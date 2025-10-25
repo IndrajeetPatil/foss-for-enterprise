@@ -416,11 +416,25 @@ In 2024, Redis changed from BSD (permissive) to dual-license (SSPL/RSALv2), rest
 
 ::: {.column width="33%" .fragment}
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.75em; height: 100%;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.75em; height: 100%; display: flex; flex-direction: column;"}
 
-[**VMware vs. Hellwig**](https://sfconservancy.org/copyleft-compliance/vmware-lawsuit-faq.html)
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/4305/4305425.png){width="60" fig-alt="Legal gavel icon"}
+:::
 
-Linux kernel developer sued VMware for GPL violation in Germany. Dismissed on procedural grounds, but VMware removed problematic component.
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[VMware vs. Hellwig](https://sfconservancy.org/copyleft-compliance/vmware-lawsuit-faq.html)
+:::
+
+::: {style="background-color: #8be9fd; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Germany • Dismissed
+:::
+
+::: {style="flex-grow: 1;"}
+Linux kernel developer sued VMware for GPL violation. VMware ultimately removed problematic component.
+:::
+
+**Takeaway:** Even dismissed cases can force compliance
 
 :::
 
@@ -428,11 +442,25 @@ Linux kernel developer sued VMware for GPL violation in Germany. Dismissed on pr
 
 ::: {.column width="33%" .fragment}
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; height: 100%;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; height: 100%; display: flex; flex-direction: column;"}
 
-[**Artifex vs. Hancom**](https://www.fsf.org/blogs/licensing/update-on-artifex-v-hancom-gnu-gpl-compliance-case-1)
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/3649/3649076.png){width="60" fig-alt="Court ruling icon"}
+:::
 
-U.S. court ruled GPL is an enforceable contract. Landmark case establishing GPL enforceability for Ghostscript license violation.
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[Artifex vs. Hancom](https://www.fsf.org/blogs/licensing/update-on-artifex-v-hancom-gnu-gpl-compliance-case-1)
+:::
+
+::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+USA • Settled
+:::
+
+::: {style="flex-grow: 1;"}
+U.S. court ruled GPL is enforceable contract. Landmark Ghostscript case.
+:::
+
+**Takeaway:** GPL licenses are legally binding contracts
 
 :::
 
@@ -440,11 +468,25 @@ U.S. court ruled GPL is an enforceable contract. Landmark case establishing GPL 
 
 ::: {.column width="33%" .fragment}
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; height: 100%;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; height: 100%; display: flex; flex-direction: column;"}
 
-[**BusyBox Lawsuits**](https://softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/2885/2885460.png){width="60" fig-alt="Multiple lawsuits icon"}
+:::
 
-First U.S. GPL enforcement lawsuits against major companies (Verizon, Best Buy, Samsung). All settled with source code disclosure.
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[BusyBox Lawsuits](https://softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
+:::
+
+::: {style="background-color: #ffb86c; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+USA • Multiple Settlements
+:::
+
+::: {style="flex-grow: 1;"}
+First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and others.
+:::
+
+**Takeaway:** Big names aren't immune to GPL enforcement
 
 :::
 
