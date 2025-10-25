@@ -493,45 +493,79 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 
 ::::
 
-## Case Study: Equifax Breach (2017) {.smaller}
+## Case Studies: Vulnerabilities {.smaller}
 
-:::: {.columns}
+**The cost of failing to patch FOSS vulnerabilities:**
 
-::: {.column width="65%" .fragment}
+::: {style="display: flex; gap: 15px; justify-content: space-between;"}
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-bottom: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.75em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
 
-**The Incident:**
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/6195/6195699.png){width="60" fig-alt="Security breach icon"}
+:::
 
-- **147.9M** Americans + **15.2M** British citizens affected
-- One of the largest identity theft breaches
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[Equifax Breach (2017)](https://en.wikipedia.org/wiki/2017_Equifax_data_breach)
+:::
+
+::: {style="background-color: #ff5555; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Unpatched Apache Struts
+:::
+
+::: {style="flex-grow: 1;"}
+147.9M Americans + 15.2M British citizens affected. Patch available March 6, breach began May 12 (2 months later). Cost: $575M settlement.
+:::
+
+**Takeaway:** Delaying patches can cost hundreds of millions
 
 :::
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-bottom: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
 
-**The Cause:**
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/2092/2092665.png){width="60" fig-alt="Critical vulnerability icon"}
+:::
 
-- **Apache Struts 2 vulnerability** (CVE-2017-5638)
-- Patch released **March 6, 2017**
-- Breach began **May 12, 2017** (2 months later!)
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[Log4Shell (2021)](https://en.wikipedia.org/wiki/Log4Shell)
+:::
+
+::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+CVSS 10/10 Critical
+:::
+
+::: {style="flex-grow: 1;"}
+Apache Log4j vulnerability. CISA director: "most serious in my entire career". Hundreds of millions of devices vulnerable. Nearly half of all corporate networks probed.
+:::
+
+**Takeaway:** Ubiquitous logging library = ubiquitous vulnerability
 
 :::
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #50fa7b; color: #f8f8f2; font-size: 0.75em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
 
-**The Cost:**
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/1642/1642989.png){width="60" fig-alt="Heartbeat icon"}
+:::
 
-- **$575M** total settlement (victim fund, states, CFPB)
-- **£11.2M** UK fine
-- Stock dropped **13%**
-- Reputational damage beyond measure
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[Heartbleed (2014)](https://en.wikipedia.org/wiki/Heartbleed)
+:::
+
+::: {style="background-color: #ffb86c; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+OpenSSL Memory Leak
+:::
+
+::: {style="flex-grow: 1;"}
+Affected 17% of all SSL servers including Yahoo, GitHub. Bug existed since 2011, disclosed April 2014. Undermined foundations of Internet security.
+:::
+
+**Takeaway:** Encryption bugs expose everyone's secrets
 
 :::
 
 :::
-
-::::
 
 ## Sustainability risks {.smaller}
 
@@ -543,10 +577,9 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 
 **Common sustainability issues:**
 
-- **Loss of maintainership** - Key developers abandon projects
-- **Burnout and underfunding** - Critical projects maintained by volunteers
-- **Toxic communities** - Hostile environments deter contributors
-- **Single point of failure** - Projects dependent on one person
+- **Maintainer burnout and underfunding**
+- **Abandoned or undermaintained projects**
+- **Toxic communities**
 
 :::
 
@@ -554,18 +587,23 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 
 **Business impact:**
 
-- **No bug fixes or security patches** for critical dependencies
-- **Forced migration** to alternative solutions
-- **Product development stalled** when core dependency fails
-- **Reputation damage** from association with toxic projects
+- **No security patches or bug fixes**
+- **Forced migration to alternatives**
+- **Reputation damage from toxic projects**
 
 :::
 
 :::
 
-::: {.column width="40%" .fragment}
+::: {.column width="40%"}
 
 ![](media/abandoned.jpg){width="280" fig-alt="Abandoned project illustration"}
+
+:::
+
+::::
+
+. . . 
 
 ::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; margin-top: 15px; text-align: center;"}
 
@@ -575,9 +613,79 @@ When a FOSS project is at the heart of your product, its sustainability becomes 
 
 :::
 
+## Case Studies: Sustainability Failures {.smaller}
+
+**Real-world examples of FOSS sustainability crises:**
+
+::: {style="display: flex; gap: 15px; justify-content: space-between;"}
+
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
+
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/6897/6897039.png){width="60" fig-alt="Package removal icon"}
 :::
 
-::::
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[left-pad (2016)](https://en.wikipedia.org/wiki/Npm_left-pad_incident)
+:::
+
+::: {style="background-color: #ff5555; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Package Removal
+:::
+
+::: {style="flex-grow: 1;"}
+11 lines of code, 15M+ downloads. Maintainer removed package after npm dispute, breaking thousands of projects (React, Babel, Node).
+:::
+
+**Takeaway:** Tiny dependencies can create massive single points of failure
+
+:::
+
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
+
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/3588/3588314.png){width="60" fig-alt="Burnout icon"}
+:::
+
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[core-js (ongoing)](https://www.theregister.com/2023/02/15/corejs_russia_open_source/)
+:::
+
+::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Burnout & Underfunding
+:::
+
+::: {style="flex-grow: 1;"}
+9B+ downloads, 50% of top 10k websites. Solo maintainer earns ~$400/month, threatened to go closed-source. Receives hate for asking funding.
+:::
+
+**Takeaway:** Critical infrastructure runs on volunteer labor
+
+:::
+
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
+
+::: {style="text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/2917/2917995.png){width="60" fig-alt="Sabotage icon"}
+:::
+
+::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
+[faker.js/colors.js (2022)](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/)
+:::
+
+::: {style="background-color: #ffb86c; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+Maintainer Protest
+:::
+
+::: {style="flex-grow: 1;"}
+3.3B downloads (colors) + 272M (faker). Maintainer intentionally sabotaged libraries to protest Fortune 500s using free work without giving back.
+:::
+
+**Takeaway:** Frustrated maintainers can become security risks
+
+:::
+
+:::
 
 # Automated Tools
 
