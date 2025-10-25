@@ -82,9 +82,9 @@ Source code for these slides can be found on [GitHub](https://github.com/Indraje
 
 ***Scope***
 <br>
-This presentation focuses on **inbound FOSS** (using open source in your products).
+Focus: **inbound FOSS** (using open source in products)
 <br>
-**Outbound FOSS** (releasing your software as open source) is out of scope.
+**Outbound FOSS** (releasing as open source) is out of scope
 
 :::
 
@@ -143,9 +143,12 @@ Free Software
 ![](media/free_as_in_freedom.jpg){width="200" fig-alt="Free as in freedom"}
 :::
 
-- **Free Software Foundation (1985)**
-- **Four Freedoms:** <br>
-  Run, study, modify, and share
+**Free Software Foundation (1985)**
+
+::: {style="font-weight: bold; margin-top: 8px; margin-bottom: 5px;"}
+Four Freedoms:
+:::
+Run, study, modify, share
 
 :::
 
@@ -159,9 +162,12 @@ Open Source
 ![](media/osi.svg){width="160" fig-alt="OSI logo"}
 :::
 
-- **Open Source Initiative (1998)**
-- **Open Source Definition:** <br>
-  10 criteria (adds non-discrimination, license distribution, technology-neutrality)
+**Open Source Initiative (1998)**
+
+::: {style="font-weight: bold; margin-top: 8px; margin-bottom: 5px;"}
+Open Source Definition:
+:::
+10 criteria (non-discrimination, license distribution, technology-neutrality)
 
 :::
 
@@ -208,7 +214,7 @@ flowchart TD
 
 ::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-bottom: 15px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.85em; text-align: center;"}
 
-**A software license is a legal instrument** governing the use, modification, and distribution of software.
+**Software license:** Legal instrument governing use, modification, and distribution of software
 
 :::
 
@@ -230,7 +236,7 @@ flowchart TD
 
 ## Effects on derivative work {.smaller}
 
-**Derivative work** includes modifications, extensions, and in some cases, linking to the original software.
+**Derivative work:** Modifications, extensions, and (sometimes) linking to original software
 
 ::: {style="display: flex; gap: 20px;"}
 
@@ -244,7 +250,9 @@ GPL-2 (Reciprocal)
 
 ::: {style="font-size: 0.85em; margin-top: 10px; text-align: left;"}
 
-**Derivative work restrictions:**
+::: {style="font-weight: bold; font-size: 1.1em; margin-bottom: 8px;"}
+Derivative work restrictions:
+:::
 
 - Modified code → Must be GPL-2
 - Linked libraries → Must be GPL-2
@@ -265,7 +273,9 @@ MIT (Permissive)
 
 ::: {style="font-size: 0.85em; margin-top: 10px; text-align: left;"}
 
-**Derivative work freedom:**
+::: {style="font-weight: bold; font-size: 1.1em; margin-bottom: 8px;"}
+Derivative work freedom:
+:::
 
 - Modified code → Any license
 - Linked libraries → Any license
@@ -296,29 +306,35 @@ License obligations are triggered by **distribution**
 
 :::
 
-. . . 
+. . .
 
-**Examples:**
+::: {style="font-weight: bold; font-size: 1.1em; margin-bottom: 10px;"}
+Examples:
+:::
 
 :::: {.columns}
 
 ::: {.column width="50%" .fragment}
 
-**IS distribution:**
+::: {style="font-weight: bold; font-size: 1.05em; color: #ff5555; margin-bottom: 8px;"}
+IS distribution:
+:::
 
-- Embedded imaging software in microscopes shipped to customers
-- Control software bundled with semiconductor lithography systems
-- Lens design software provided to opticians and eye care professionals
+- Imaging software in shipped microscopes
+- Control software bundled with lithography systems
+- Lens design software for opticians
 
 :::
 
 ::: {.column width="50%" .fragment}
 
-**NOT distribution:**
+::: {style="font-weight: bold; font-size: 1.05em; color: #50fa7b; margin-bottom: 8px;"}
+NOT distribution:
+:::
 
-- Internal software tools for microscope development and testing
-- Web services running on internal servers for quality assurance
-- Software prototypes used only within internal R&D labs
+- Internal development/testing tools
+- Web services on internal servers
+- R&D prototypes used internally
 
 :::
 
@@ -332,22 +348,26 @@ License obligations are triggered by **distribution**
 
 ::: {.fragment style="flex: 1; background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.8em;"}
 
-**Common issues:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ffb86c;"}
+Common issues:
+:::
 
-- Developers add dependencies unknowingly
-- Transitive dependencies go unnoticed
+- Dependencies added unknowingly
+- Transitive dependencies unnoticed
 - License obligations misunderstood
-- No inventory of FOSS components
+- No component inventory
 
 :::
 
 ::: {.fragment style="flex: 1; background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
 
-**Non-compliance consequences:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff5555;"}
+Non-compliance consequences:
+:::
 
 - Copyright infringement lawsuits
 - Forced source code disclosure
-- Injunctions preventing product sales
+- Product sales injunctions
 - Reputational damage
 - Financial penalties
 
@@ -367,7 +387,7 @@ License obligations are triggered by **distribution**
 
 **License changes can break your business:**
 
-In 2024, Redis changed from BSD (permissive) to dual-license (SSPL/RSALv2), restricting commercial use. Companies relying on Redis had to either pay for commercial licenses or migrate to alternatives
+Redis switched from BSD to SSPL/RSALv2 (2024), forcing companies to pay or migrate
 
 **Lesson:** Monitor upstream license changes actively!
 
@@ -404,10 +424,10 @@ Germany • Dismissed
 :::
 
 ::: {style="flex-grow: 1;"}
-Linux kernel developer sued VMware for GPL violation. VMware ultimately removed problematic component.
+Linux developer sued VMware for GPL violation. VMware ultimately removed problematic component.
 :::
 
-**Takeaway:** Even dismissed cases can force compliance
+**Takeaway:** Dismissed cases can still force compliance
 
 :::
 
@@ -448,10 +468,10 @@ USA • Multiple Settlements
 :::
 
 ::: {style="flex-grow: 1;"}
-First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and others.
+First U.S. GPL enforcement lawsuits vs. Verizon, Best Buy, Samsung, and others.
 :::
 
-**Takeaway:** Big names aren't immune to GPL enforcement
+**Takeaway:** Big names aren't immune to enforcement
 
 :::
 
@@ -465,7 +485,9 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #ff5555; color: #f8f8f2;"}
 
-**Common security risks:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff5555;"}
+Common security risks:
+:::
 
 - Outdated packages with known CVEs
 - Unpatched critical vulnerabilities
@@ -475,11 +497,13 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.8em;"}
 
-**CVEs can enable:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ffb86c;"}
+CVEs can enable:
+:::
 
-- **Remote Code Execution** - Attacker runs arbitrary code on your servers
-- **Data Exfiltration** - Unauthorized access to sensitive information
-- **Denial of Service** - System crashes or becomes unavailable
+- **Remote Code Execution** - Run arbitrary code
+- **Data Exfiltration** - Access sensitive data
+- **Denial of Service** - Crash or disable systems
 
 :::
 
@@ -514,10 +538,10 @@ Unpatched Apache Struts
 :::
 
 ::: {style="flex-grow: 1;"}
-147.9M Americans + 15.2M British citizens affected. Patch available March 6, breach began May 12 (2 months later). Cost: $575M settlement.
+147.9M Americans + 15.2M British affected. Patch available 2 months before breach. Cost: $575M settlement.
 :::
 
-**Takeaway:** Delaying patches can cost hundreds of millions
+**Takeaway:** Delaying patches costs hundreds of millions
 
 :::
 
@@ -536,10 +560,10 @@ CVSS 10/10 Critical
 :::
 
 ::: {style="flex-grow: 1;"}
-Apache Log4j vulnerability. CISA director: "most serious in my entire career". Hundreds of millions of devices vulnerable. Nearly half of all corporate networks probed.
+Apache Log4j vulnerability. CISA: "most serious in my career". Hundreds of millions of devices vulnerable. Half of corporate networks probed.
 :::
 
-**Takeaway:** Ubiquitous logging library = ubiquitous vulnerability
+**Takeaway:** Ubiquitous library = ubiquitous vulnerability
 
 :::
 
@@ -558,7 +582,7 @@ OpenSSL Memory Leak
 :::
 
 ::: {style="flex-grow: 1;"}
-Affected 17% of all SSL servers including Yahoo, GitHub. Bug existed since 2011, disclosed April 2014. Undermined foundations of Internet security.
+17% of SSL servers affected (Yahoo, GitHub). Bug existed since 2011, disclosed 2014. Undermined Internet security foundations.
 :::
 
 **Takeaway:** Encryption bugs expose everyone's secrets
@@ -575,21 +599,25 @@ Affected 17% of all SSL servers including Yahoo, GitHub. Bug existed since 2011,
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.8em;"}
 
-**Common sustainability issues:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #bd93f9;"}
+Common sustainability issues:
+:::
 
-- **Maintainer burnout and underfunding**
-- **Abandoned or undermaintained projects**
-- **Toxic communities**
+- Maintainer burnout and underfunding
+- Abandoned or undermaintained projects
+- Toxic communities
 
 :::
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
 
-**Business impact:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff5555;"}
+Business impact:
+:::
 
-- **No security patches or bug fixes**
-- **Forced migration to alternatives**
-- **Reputation damage from toxic projects**
+- No security patches or bug fixes
+- Forced migration to alternatives
+- Reputation damage from toxic projects
 
 :::
 
@@ -607,9 +635,11 @@ Affected 17% of all SSL servers including Yahoo, GitHub. Bug existed since 2011,
 
 ::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; margin-top: 15px; text-align: center;"}
 
-**Critical dependency risk:**
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 8px; color: #ffb86c;"}
+Critical dependency risk:
+:::
 
-When a FOSS project is at the heart of your product, its sustainability becomes **your** sustainability.
+FOSS project at your product's heart = its sustainability is **your** sustainability
 
 :::
 
@@ -634,10 +664,10 @@ Package Removal
 :::
 
 ::: {style="flex-grow: 1;"}
-11 lines of code, 15M+ downloads. Maintainer removed package after npm dispute, breaking thousands of projects (React, Babel, Node).
+11 lines of code, 15M+ downloads. Maintainer removed after dispute, breaking thousands of projects (React, Babel, Node).
 :::
 
-**Takeaway:** Tiny dependencies can create massive single points of failure
+**Takeaway:** Tiny dependencies create massive failure points
 
 :::
 
@@ -656,7 +686,7 @@ Burnout & Underfunding
 :::
 
 ::: {style="flex-grow: 1;"}
-9B+ downloads, 50% of top 10k websites. Solo maintainer earns ~$400/month, threatened to go closed-source. Receives hate for asking funding.
+9B+ downloads, 50% of top 10k websites. Solo maintainer earns ~$400/month, threatened to go closed-source.
 :::
 
 **Takeaway:** Critical infrastructure runs on volunteer labor
@@ -678,7 +708,7 @@ Maintainer Protest
 :::
 
 ::: {style="flex-grow: 1;"}
-3.3B downloads (colors) + 272M (faker). Maintainer intentionally sabotaged libraries to protest Fortune 500s using free work without giving back.
+3.3B+ downloads. Maintainer sabotaged libraries to protest Fortune 500s using free work without giving back.
 :::
 
 **Takeaway:** Frustrated maintainers can become security risks
