@@ -533,6 +533,52 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 
 ::::
 
+## Sustainability risks {.smaller}
+
+:::: {.columns}
+
+::: {.column width="60%" .fragment}
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.8em;"}
+
+**Common sustainability issues:**
+
+- **Loss of maintainership** - Key developers abandon projects
+- **Burnout and underfunding** - Critical projects maintained by volunteers
+- **Toxic communities** - Hostile environments deter contributors
+- **Single point of failure** - Projects dependent on one person
+
+:::
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
+
+**Business impact:**
+
+- **No bug fixes or security patches** for critical dependencies
+- **Forced migration** to alternative solutions
+- **Product development stalled** when core dependency fails
+- **Reputation damage** from association with toxic projects
+
+:::
+
+:::
+
+::: {.column width="40%" .fragment}
+
+![](media/abandoned.jpg){width="280" fig-alt="Abandoned project illustration"}
+
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; margin-top: 15px; text-align: center;"}
+
+**Critical dependency risk:**
+
+When a FOSS project is at the heart of your product, its sustainability becomes **your** sustainability.
+
+:::
+
+:::
+
+::::
+
 # Automated Tools
 
 ## Why automate FOSS management? {.smaller}
