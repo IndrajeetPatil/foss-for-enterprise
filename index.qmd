@@ -56,14 +56,18 @@ Indrajeet Patil
 
 ::: {.column width="40%"}
 
-[![](media/dependency.png){width="400" height="400" fig-alt="Software dependency illustration"}](https://xkcd.com/2347/)
+![](media/dependency.png){width="400" height="400" fig-alt="Software dependency illustration"}
+
+::: {style="text-align: center; font-size: 0.4em; margin-top: -7px;"}
+([xkcd](https://xkcd.com/2347/), CC BY-NC 2.5)
+:::
 
 :::
 
 ::::
 
-::: {style="text-align: center; font-size: 0.7em; margin-top: 2em; color: #666;"}
-Source code for these slides can be found [on GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/).
+::: {style="text-align: center; font-size: 0.5em; color: #666;"}
+Source code for these slides can be found on [GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/)
 :::
 
 ## What you'll learn today {.smaller}
@@ -85,7 +89,9 @@ This presentation focuses on **inbound FOSS** (using open source in your product
 
 :::
 
-# History of FOSS
+# FOSS Licensing
+
+A Historical Perspective
 
 ## In the beginning... {.smaller}
 
@@ -156,7 +162,7 @@ Open Source
 
 - **Open Source Initiative (1998)**
 - **Open Source Definition:** <br>
-  10 criteria defining open source
+  10 criteria (adds non-discrimination, license distribution, technology-neutrality)
 
 :::
 
@@ -164,7 +170,30 @@ Open Source
 
 ::::
 
-# Software Licenses
+## Intellectual Property Basics {.smaller}
+
+Different aspects of software are protected by different types of intellectual property law.
+
+```{mermaid}
+%%| eval: true
+%%| echo: false
+flowchart TD
+    IP[Intellectual Property]
+    IP --> Ideas[Idea]
+    IP --> Expression[Expression of Idea]
+
+    Ideas --> Patent[Patent<br/>Inventions & processes]
+    Ideas --> Trademark[Trademark<br/>Brands & symbols]
+
+    Expression --> Copyright[Copyright<br/>Original creative works<br/>Source code]
+
+    style IP fill:#44475a,stroke:#f8f8f2,color:#f8f8f2
+    style Ideas fill:#ffb86c,stroke:#f8f8f2,color:#282a36
+    style Expression fill:#8be9fd,stroke:#f8f8f2,color:#282a36
+    style Patent fill:#44475a,stroke:#ffb86c,color:#f8f8f2
+    style Trademark fill:#44475a,stroke:#ffb86c,color:#f8f8f2
+    style Copyright fill:#44475a,stroke:#8be9fd,color:#f8f8f2
+```
 
 ## What are software licenses? {.smaller}
 
@@ -174,6 +203,8 @@ Open Source
 
 :::
 
+. . .
+
 :::: {.columns}
 
 ::: {.column width="65%"}
@@ -182,8 +213,7 @@ Open Source
 
 - Software is protected by **copyright** law by default
 - Without a license, you have **no legal right** to use, copy, or modify software
-- Licenses grant permissions while setting conditions
-- Violating license terms can result in legal action
+- Licenses grant permissions under legally enforceable conditions
 
 :::
 
@@ -199,25 +229,40 @@ Open Source
 
 The free software and open source movements led to two main license types:
 
+|                     | **Reciprocal (Copyleft)**                  | **Permissive**                          |
+|---------------------|--------------------------------------------|-----------------------------------------|
+| **Origin**          | Free Software Movement                     | Academic institutions, OSI              |
+| **Philosophy**      | Preserve freedom for all users             | Maximum freedom to developers           |
+| **Key Feature**     | Derivatives must use same license          | Minimal restrictions                    |
+| **Examples**        | GPL, AGPL, MPL                             | MIT, BSD, Apache                        |
+| **Goal**            | Ensure software remains free               | Enable broad adoption and use           |
+
+## Effects on derivative work {.smaller}
+
+**Derivative work** includes modifications, extensions, and in some cases, linking to the original software.
+
 :::: {.columns}
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; font-size: 0.85em; border: 2px solid #8be9fd; color: #f8f8f2;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; text-align: center;"}
 
-::: {style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;"}
-Reciprocal (Copyleft)
+::: {style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"}
+GPL-2 (Reciprocal)
 :::
 
-**Origin:** Free Software Movement
+![](https://cdn-icons-png.flaticon.com/512/1161/1161388.png){width="120" fig-alt="Chain link icon" style="display: block; margin: 0 auto;"}
 
-**Philosophy:** Preserve freedom for all users
+::: {style="font-size: 0.85em; margin-top: 10px; text-align: left;"}
 
-**Key Feature:** Derivatives must use same license
+**Derivative work restrictions:**
 
-**Examples:** GPL, AGPL, MPL
+- Modified code → Must be GPL-2
+- Linked libraries → Must be GPL-2
+- Combined works → Must be GPL-2
+- Source code must be disclosed
 
-**Goal:** Ensure software remains free
+:::
 
 :::
 
@@ -225,120 +270,30 @@ Reciprocal (Copyleft)
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; font-size: 0.85em; border: 2px solid #bd93f9; color: #f8f8f2;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; text-align: center;"}
 
-::: {style="font-size: 1.5em; font-weight: bold; margin-bottom: 10px;"}
-Permissive
+::: {style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"}
+MIT (Permissive)
 :::
 
-**Origin:** Academic institutions, OSI
+![](https://cdn-icons-png.flaticon.com/512/3004/3004458.png){width="120" fig-alt="Open hands icon" style="display: block; margin: 0 auto;"}
 
-**Philosophy:** Maximum freedom to developers
+::: {style="font-size: 0.85em; margin-top: 10px; text-align: left;"}
 
-**Key Feature:** Minimal restrictions
+**Derivative work freedom:**
 
-**Examples:** MIT, BSD, Apache
+- Modified code → Any license
+- Linked libraries → Any license
+- Combined works → Any license
+- Source code disclosure optional
 
-**Goal:** Enable broad adoption and use
+:::
 
 :::
 
 :::
 
 ::::
-
-## Reciprocal License Example {.smaller}
-
-**GNU General Public License v2.0**
-
-:::: {.columns}
-
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2;"}
-
-**Key Features:**
-
-- **Strong copyleft** - Derivatives must be GPL-2
-- **Source code disclosure** required upon distribution
-- **Same license terms** for all recipients
-- **Patent grants** (implied)
-- Most notably used by **Linux kernel**
-
-:::
-
-:::
-
-::: {.column width="50%" .fragment}
-
-**When you distribute GPL-2 software:**
-
-```text
-You must:
-✓ Provide source code
-✓ Include original license and copyright
-✓ Document your changes
-✓ License your entire work under GPL-2
-
-You cannot:
-✗ Make it proprietary
-✗ Sublicense under different terms
-```
-
-:::
-
-::::
-
-::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px; border: 2px solid #ffb86c; color: #f8f8f2;"}
-**"Share-alike" requirement ensures software stays open**
-:::
-
-## Permissive License Example {.smaller}
-
-**MIT License**
-
-:::: {.columns}
-
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2;"}
-
-**Key Features:**
-
-- **Minimal restrictions** on use and redistribution
-- **Can be used in proprietary** software
-- **No source code disclosure** requirement
-- Only requires **copyright notice** preservation
-- Most popular license on GitHub
-
-:::
-
-:::
-
-::: {.column width="50%" .fragment}
-
-**What you can do with MIT software:**
-
-```text
-Permissions:
-✓ Use commercially
-✓ Modify as needed
-✓ Distribute freely
-✓ Sublicense (even as proprietary)
-✓ Keep modifications private
-
-Only requirement:
-- Include original MIT license text
-- Include copyright notice
-```
-
-:::
-
-::::
-
-::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; text-align: center; margin-top: 10px; border: 2px solid #50fa7b; color: #f8f8f2;"}
-**Maximum flexibility for developers and businesses**
-:::
 
 # Legal Aspects
 
@@ -350,11 +305,15 @@ License obligations are triggered by **distribution**
 
 :::
 
-**What is distribution?**
+. . .
 
-- Transferring a copy of software from one legal entity to another
-- Providing software binaries or source code to external parties
-- **Internal use** within your organization is generally **NOT** distribution
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 15px 0; text-align: center; border: 2px solid #50fa7b; color: #f8f8f2;"}
+
+**Internal use** within your organization is generally **NOT** distribution
+
+:::
+
+. . . 
 
 **Examples:**
 
@@ -364,10 +323,9 @@ License obligations are triggered by **distribution**
 
 **IS distribution:**
 
-- Shipping software to customers
-- Publishing container images publicly
-- Providing software to contractors
-- Selling products containing FOSS
+- Embedded imaging software in microscopes shipped to customers
+- Control software bundled with semiconductor lithography systems
+- Lens design software provided to opticians and eye care professionals
 
 :::
 
@@ -375,42 +333,38 @@ License obligations are triggered by **distribution**
 
 **NOT distribution:**
 
-- Using FOSS internally
-- Running services on your servers
-- SaaS applications (usually)*
-- Internal tool deployment
+- Internal software tools for microscope development and testing
+- Web services running on internal servers for quality assurance
+- Software prototypes used only within internal R&D labs
 
 :::
 
 ::::
 
-::: {style="font-size: 0.8em; margin-top: 10px; font-style: italic;"}
-*Exception: AGPL requires source disclosure for network use
-:::
+# Enterprise Risks
 
-## License compliance matters {.smaller}
+## Lack of awareness and compliance {.smaller}
 
 :::: {.columns}
 
-::: {.column width="48%" style="margin-right: 2%;"}
+::: {.column width="50%" .fragment}
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #50fa7b; color: #f8f8f2; font-size: 0.85em;"}
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.8em;"}
 
-**What you need to do:**
+**Common issues:**
 
-- **Track all FOSS** components in your products
-- **Understand license obligations** for each component
-- **Maintain attribution** (copyright notices, licenses)
-- **Provide source code** when required (copyleft licenses)
-- **Document your compliance** process
-
-:::
+- Developers add dependencies unknowingly
+- Transitive dependencies go unnoticed
+- License obligations misunderstood
+- No inventory of FOSS components
 
 :::
 
-::: {.column width="48%" style="margin-left: 2%;"}
+:::
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.85em;"}
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
 
 **Non-compliance consequences:**
 
@@ -426,33 +380,91 @@ License obligations are triggered by **distribution**
 
 ::::
 
-# Enterprise Risks
+<br>
 
-## Common FOSS risks for enterprises {.smaller}
+. . .
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.85em;"}
+
+**License changes can break your business:**
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+In 2024, Redis changed from BSD (permissive) to dual-license (SSPL/RSALv2), restricting commercial use. Companies relying on Redis had to either pay for commercial licenses or migrate to alternatives
+
+**Lesson:** Monitor upstream license changes actively!
+
+:::
+
+::: {.column width="30%"}
+
+![](media/redis.jpg){width="200" fig-alt="Redis logo"}
+
+:::
+
+::::
+
+:::
+
+## Case Studies: License Violations {.smaller}
+
+**Famous legal battles involving FOSS license infringement:**
+
+:::: {.columns}
+
+::: {.column width="33%" .fragment}
+
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.75em; height: 100%;"}
+
+[**VMware vs. Hellwig**](https://sfconservancy.org/copyleft-compliance/vmware-lawsuit-faq.html)
+
+Linux kernel developer sued VMware for GPL violation in Germany. Dismissed on procedural grounds, but VMware removed problematic component.
+
+:::
+
+:::
+
+::: {.column width="33%" .fragment}
+
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; height: 100%;"}
+
+[**Artifex vs. Hancom**](https://www.fsf.org/blogs/licensing/update-on-artifex-v-hancom-gnu-gpl-compliance-case-1)
+
+U.S. court ruled GPL is an enforceable contract. Landmark case establishing GPL enforceability for Ghostscript license violation.
+
+:::
+
+:::
+
+::: {.column width="33%" .fragment}
+
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; height: 100%;"}
+
+[**BusyBox Lawsuits**](https://softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
+
+First U.S. GPL enforcement lawsuits against major companies (Verizon, Best Buy, Samsung). All settled with source code disclosure.
+
+:::
+
+:::
+
+::::
+
+## Security vulnerabilities {.smaller}
 
 :::: {.columns}
 
 ::: {.column width="50%" .fragment}
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #ffb86c; color: #f8f8f2;"}
-
-**1. Lack of awareness**
-
-- Developers add dependencies unknowingly
-- Transitive dependencies go unnoticed
-- License obligations misunderstood
-- No inventory of FOSS components
-
-:::
-
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2;"}
 
-**2. Security vulnerabilities**
+**Common security risks:**
 
 - Outdated packages with known CVEs
 - Unpatched critical vulnerabilities
 - Supply chain attacks
-- Abandoned projects
 
 :::
 
@@ -460,7 +472,7 @@ License obligations are triggered by **distribution**
 
 ::: {.column width="50%" .fragment}
 
-![](https://cdn-icons-png.flaticon.com/512/6195/6195699.png){width="300" fig-alt="Security risk icon"}
+![](media/patch.jpeg){fig-alt="Patch illustration"}
 
 :::
 
@@ -472,7 +484,7 @@ License obligations are triggered by **distribution**
 
 ::: {.column width="65%" .fragment}
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-bottom: 10px; border: 2px solid #ff5555; color: #f8f8f2;"}
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-bottom: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.75em;"}
 
 **The Incident:**
 
@@ -481,25 +493,25 @@ License obligations are triggered by **distribution**
 
 :::
 
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2;"}
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; margin-bottom: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em;"}
 
 **The Cause:**
 
 - **Apache Struts 2 vulnerability** (CVE-2017-5638)
 - Patch released **March 6, 2017**
 - Breach began **May 12, 2017** (2 months later!)
-- Continued undetected for **76 days**
 
 :::
 
-:::
+::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #50fa7b; color: #f8f8f2; font-size: 0.75em;"}
 
-::: {.column width="35%" .fragment}
+**The Cost:**
 
-![](https://cdn-icons-png.flaticon.com/512/4401/4401403.png){width="220" fig-alt="Data breach icon"}
+- **$575M** total settlement (victim fund, states, CFPB)
+- **£11.2M** UK fine
+- Stock dropped **13%**
+- Reputational damage beyond measure
 
-::: {style="text-align: center; font-size: 0.85em; font-weight: bold; margin-top: 15px; font-style: italic;"}
-Failed to patch a known vulnerability
 :::
 
 :::
@@ -510,26 +522,19 @@ Failed to patch a known vulnerability
 
 ## Why automate FOSS management? {.smaller}
 
-Manual tracking is not scalable:
+::: {style="font-size: 0.75em;"}
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin: 10px 0; border: 2px solid #8be9fd; color: #f8f8f2;"}
-
-**Modern applications can have:**
-
-- Hundreds or thousands of direct dependencies
-- Tens of thousands of transitive dependencies
-- Multiple package managers (npm, pip, Maven, etc.)
-- Constantly evolving vulnerability landscape
+| **Problem** | **How Automation Helps** |
+|-------------|--------------------------|
+| Hundreds to thousands of direct dependencies | **Automated discovery** of all FOSS components in codebase |
+| Tens of thousands of transitive dependencies | **Dependency mapping** to track entire dependency tree |
+| Multiple package managers (npm, pip, Maven, etc.) | **Multi-ecosystem support** across all package managers |
+| Constantly evolving vulnerability landscape | **Continuous monitoring** for newly discovered CVEs |
+| Unknown license obligations | **License detection** and compliance checking |
+| No visibility into component inventory | **SBOM generation** (Software Bill of Materials) |
+| Manual tracking doesn't scale | **Automated alerts** and reporting for issues |
 
 :::
-
-**Automated tools help you:**
-
-- Discover all FOSS components in your codebase
-- Identify security vulnerabilities (CVEs)
-- Detect license compliance issues
-- Generate Software Bill of Materials (SBOM)
-- Monitor for new vulnerabilities
 
 ## Open Source Tool: Trivy {.smaller}
 
@@ -594,7 +599,7 @@ Enterprise support, extensive database, advanced reporting
 
 ::: {.column width="30%"}
 
-![](media/431461.png){width="180" fig-alt="Black Duck logo"}
+![](media/blackduck.png){width="180" fig-alt="Black Duck logo"}
 
 :::
 
