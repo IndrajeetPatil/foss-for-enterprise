@@ -82,10 +82,15 @@ Source code for these slides can be found on [GitHub](https://github.com/Indraje
 
 ***Scope***
 <br>
-<br>
 This presentation focuses on **inbound FOSS** (using open source in your products).
 <br>
 **Outbound FOSS** (releasing your software as open source) is out of scope.
+
+:::
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 15px; text-align: center; border: 2px solid #ff5555; color: #f8f8f2; margin-top: 20px; font-size: 0.85em;"}
+
+**Disclaimer:** I am not a lawyer. This presentation is for educational purposes only and does not constitute legal advice.
 
 :::
 
@@ -162,7 +167,11 @@ Open Source
 
 :::
 
-## Intellectual Property Basics {.smaller}
+## What are software licenses? {.smaller}
+
+::: {style="display: flex; gap: 20px; align-items: center;"}
+
+::: {style="flex: 0 0 65%;"}
 
 Different aspects of software are protected by different types of intellectual property law.
 
@@ -193,43 +202,27 @@ flowchart TD
     linkStyle 4 stroke:#50fa7b,stroke-width:3px
 ```
 
-## What are software licenses? {.smaller}
+:::
 
-::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin: 15px 0; border: 2px solid #8be9fd; color: #f8f8f2;"}
+::: {style="flex: 0 0 35%; text-align: center;"}
+
+::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-bottom: 15px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.85em; text-align: center;"}
 
 **A software license is a legal instrument** governing the use, modification, and distribution of software.
 
 :::
 
-. . .
-
-:::: {.columns}
-
-::: {.column width="65%"}
-
-**Why are they important?**
-
-- Software is protected by **copyright** law by default
-- Without a license, you have **no legal right** to use, copy, or modify software
-- Licenses grant permissions under legally enforceable conditions
-
-:::
-
-::: {.column width="35%"}
-
 ![](media/laurent.jpg){width="250" fig-alt="Laurent illustration"}
 
 :::
 
-::::
+:::
 
-## Two license philosophies {.smaller}
-
-The free software and open source movements led to two main license types:
+## Movements ↔ Licence Philosophies {.smaller}
 
 |                     | **Reciprocal (Copyleft)**                  | **Permissive**                          |
 |---------------------|--------------------------------------------|-----------------------------------------|
-| **Origin**          | Free Software Movement                     | Academic institutions, OSI              |
+| **Origin**          | Free Software Movement                     | Open Source Initiative                  |
 | **Philosophy**      | Preserve freedom for all users             | Maximum freedom to developers           |
 | **Key Feature**     | Derivatives must use same license          | Minimal restrictions                    |
 | **Examples**        | GPL, AGPL, MPL                             | MIT, BSD, Apache                        |
