@@ -180,11 +180,17 @@ flowchart TD
     Expression --> Copyright[Copyright<br/>Original creative works<br/>Source code]
 
     style IP fill:#44475a,stroke:#f8f8f2,color:#f8f8f2
-    style Ideas fill:#ffb86c,stroke:#f8f8f2,color:#282a36
-    style Expression fill:#8be9fd,stroke:#f8f8f2,color:#282a36
-    style Patent fill:#44475a,stroke:#ffb86c,color:#f8f8f2
-    style Trademark fill:#44475a,stroke:#ffb86c,color:#f8f8f2
-    style Copyright fill:#44475a,stroke:#8be9fd,color:#f8f8f2
+    style Ideas fill:#6c6c6c,stroke:#999999,color:#cccccc
+    style Expression fill:#50fa7b,stroke:#f8f8f2,color:#282a36,stroke-width:3px
+    style Patent fill:#3a3a3a,stroke:#666666,color:#888888
+    style Trademark fill:#3a3a3a,stroke:#666666,color:#888888
+    style Copyright fill:#50fa7b,stroke:#f8f8f2,color:#282a36,stroke-width:4px
+
+    linkStyle 0 stroke:#666666,stroke-width:2px
+    linkStyle 1 stroke:#50fa7b,stroke-width:3px
+    linkStyle 2 stroke:#666666,stroke-width:1px
+    linkStyle 3 stroke:#666666,stroke-width:1px
+    linkStyle 4 stroke:#50fa7b,stroke-width:3px
 ```
 
 ## What are software licenses? {.smaller}
