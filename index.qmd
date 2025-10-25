@@ -126,11 +126,9 @@ A Historical Perspective
 
 ## The FOSS Movement {.smaller}
 
-:::: {.columns}
+::: {style="display: flex; gap: 20px;"}
 
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.7em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 10px; border-radius: 8px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.7em;"}
 
 ::: {style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 5px;"}
 Free Software
@@ -146,11 +144,7 @@ Free Software
 
 :::
 
-:::
-
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 10px; border-radius: 8px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.7em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 10px; border-radius: 8px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.7em;"}
 
 ::: {style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 5px;"}
 Open Source
@@ -167,8 +161,6 @@ Open Source
 :::
 
 :::
-
-::::
 
 ## Intellectual Property Basics {.smaller}
 
@@ -241,11 +233,9 @@ The free software and open source movements led to two main license types:
 
 **Derivative work** includes modifications, extensions, and in some cases, linking to the original software.
 
-:::: {.columns}
+::: {style="display: flex; gap: 20px;"}
 
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; text-align: center;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; text-align: center;"}
 
 ::: {style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"}
 GPL-2 (Reciprocal)
@@ -266,11 +256,7 @@ GPL-2 (Reciprocal)
 
 :::
 
-:::
-
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; text-align: center;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; text-align: center;"}
 
 ::: {style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"}
 MIT (Permissive)
@@ -292,8 +278,6 @@ MIT (Permissive)
 :::
 
 :::
-
-::::
 
 # Legal Aspects
 
@@ -345,11 +329,9 @@ License obligations are triggered by **distribution**
 
 ## Lack of awareness and compliance {.smaller}
 
-:::: {.columns}
+::: {style="display: flex; gap: 20px;"}
 
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.8em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.8em;"}
 
 **Common issues:**
 
@@ -360,11 +342,7 @@ License obligations are triggered by **distribution**
 
 :::
 
-:::
-
-::: {.column width="50%" .fragment}
-
-::: {style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
 
 **Non-compliance consequences:**
 
@@ -377,8 +355,6 @@ License obligations are triggered by **distribution**
 :::
 
 :::
-
-::::
 
 <br>
 
