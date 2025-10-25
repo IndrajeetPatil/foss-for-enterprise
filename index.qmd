@@ -412,11 +412,9 @@ In 2024, Redis changed from BSD (permissive) to dual-license (SSPL/RSALv2), rest
 
 **Famous legal battles involving FOSS license infringement:**
 
-:::: {.columns}
+::: {style="display: flex; gap: 15px; justify-content: space-between;"}
 
-::: {.column width="33%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.75em; height: 100%; display: flex; flex-direction: column;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
 
 ::: {style="text-align: center;"}
 ![](https://cdn-icons-png.flaticon.com/512/4305/4305425.png){width="60" fig-alt="Legal gavel icon"}
@@ -438,11 +436,7 @@ Linux kernel developer sued VMware for GPL violation. VMware ultimately removed 
 
 :::
 
-:::
-
-::: {.column width="33%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; height: 100%; display: flex; flex-direction: column;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
 
 ::: {style="text-align: center;"}
 ![](https://cdn-icons-png.flaticon.com/512/3649/3649076.png){width="60" fig-alt="Court ruling icon"}
@@ -464,11 +458,7 @@ U.S. court ruled GPL is enforceable contract. Landmark Ghostscript case.
 
 :::
 
-:::
-
-::: {.column width="33%" .fragment}
-
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; height: 100%; display: flex; flex-direction: column;"}
+::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; display: flex; flex-direction: column;"}
 
 ::: {style="text-align: center;"}
 ![](https://cdn-icons-png.flaticon.com/512/2885/2885460.png){width="60" fig-alt="Multiple lawsuits icon"}
@@ -491,8 +481,6 @@ First U.S. GPL enforcement lawsuits against Verizon, Best Buy, Samsung, and othe
 :::
 
 :::
-
-::::
 
 ## Security vulnerabilities {.smaller}
 
