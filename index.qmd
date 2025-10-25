@@ -386,11 +386,11 @@ License obligations are triggered by **distribution**
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.85em;"}
 
-**License changes can break your business:**
-
 :::: {.columns}
 
 ::: {.column width="70%"}
+
+**License changes can break your business:**
 
 In 2024, Redis changed from BSD (permissive) to dual-license (SSPL/RSALv2), restricting commercial use. Companies relying on Redis had to either pay for commercial licenses or migrate to alternatives
 
@@ -400,7 +400,7 @@ In 2024, Redis changed from BSD (permissive) to dual-license (SSPL/RSALv2), rest
 
 ::: {.column width="30%"}
 
-![](media/redis.jpg){width="200" fig-alt="Redis logo"}
+![](media/redis.jpg){width="250" fig-alt="Redis logo"}
 
 :::
 
@@ -456,9 +456,9 @@ First U.S. GPL enforcement lawsuits against major companies (Verizon, Best Buy, 
 
 :::: {.columns}
 
-::: {.column width="50%" .fragment}
+::: {.column width="60%" .fragment}
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #ff5555; color: #f8f8f2;"}
 
 **Common security risks:**
 
@@ -468,9 +468,19 @@ First U.S. GPL enforcement lawsuits against major companies (Verizon, Best Buy, 
 
 :::
 
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.8em;"}
+
+**CVEs can enable:**
+
+- **Remote Code Execution** - Attacker runs arbitrary code on your servers
+- **Data Exfiltration** - Unauthorized access to sensitive information
+- **Denial of Service** - System crashes or becomes unavailable
+
 :::
 
-::: {.column width="50%" .fragment}
+:::
+
+::: {.column width="40%" .fragment}
 
 ![](media/patch.jpeg){fig-alt="Patch illustration"}
 
