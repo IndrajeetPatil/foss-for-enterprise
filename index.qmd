@@ -82,10 +82,15 @@ Source code for these slides can be found on [GitHub](https://github.com/Indraje
 
 ***Scope***
 <br>
-<br>
 This presentation focuses on **inbound FOSS** (using open source in your products).
 <br>
 **Outbound FOSS** (releasing your software as open source) is out of scope.
+
+:::
+
+::: {style="background-color: #44475a; padding: 15px; border-radius: 15px; text-align: center; border: 2px solid #ff5555; color: #f8f8f2; margin-top: 20px; font-size: 0.85em;"}
+
+**Disclaimer:** I am not a lawyer. This presentation is for educational purposes only and does not constitute legal advice.
 
 :::
 
@@ -223,13 +228,11 @@ flowchart TD
 
 ::::
 
-## Two license philosophies {.smaller}
-
-The free software and open source movements led to two main license types:
+## Two Movements = Two Licence Philosophies {.smaller}
 
 |                     | **Reciprocal (Copyleft)**                  | **Permissive**                          |
 |---------------------|--------------------------------------------|-----------------------------------------|
-| **Origin**          | Free Software Movement                     | Academic institutions, OSI              |
+| **Origin**          | Free Software Movement                     | Open Source Initiative                  |
 | **Philosophy**      | Preserve freedom for all users             | Maximum freedom to developers           |
 | **Key Feature**     | Derivatives must use same license          | Minimal restrictions                    |
 | **Examples**        | GPL, AGPL, MPL                             | MIT, BSD, Apache                        |
