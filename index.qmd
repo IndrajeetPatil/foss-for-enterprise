@@ -56,7 +56,9 @@ Indrajeet Patil
 
 ::: {.column width="40%"}
 
+::: {style="text-align: center;"}
 ![](media/dependency.png){width="400" height="400" fig-alt="xkcd comic showing modern digital infrastructure precariously balanced on a small project maintained by one person since 2003"}
+:::
 
 ::: {style="text-align: center; font-size: 0.4em; margin-top: -7px;"}
 ([xkcd](https://xkcd.com/2347/), CC BY-NC 2.5)
@@ -72,25 +74,43 @@ Source code for these slides can be found on [GitHub](https://github.com/Indraje
 
 ## What you'll learn today {.smaller}
 
-- History of Free and Open Source Software (FOSS)
-- Key differences between software licenses
-- Legal implications of using open source software
-- Enterprise risks when using FOSS
+:::: {.columns}
+
+::: {.column width="60%"}
+
+- FOSS licensing history and philosophies
+- Legal implications and compliance requirements
+- Enterprise risks: security, sustainability, and violations
 - Automated tools for managing open source dependencies
 
-::: {style="background-color: #44475a; padding: 20px; border-radius: 25px; text-align: center; border: 2px solid #ffb86c; color: #f8f8f2;"}
+::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-top: 20px; border: 3px solid #ffb86c; color: #f8f8f2;"}
 
-***Scope***
-<br>
-Focus: **inbound FOSS** (using open source in products)
-<br>
-**Outbound FOSS** (releasing as open source) is out of scope
+::: {style="text-align: center; font-size: 1.1em; font-weight: bold; color: #ffb86c; margin-bottom: 12px;"}
+Scope
+:::
+
+::: {style="font-size: 0.8em; line-height: 1.6;"}
+✅ **Inbound FOSS** • Using open source in your products<br>
+❌ **Outbound FOSS** • Releasing your code as open source
+:::
 
 :::
 
+:::
+
+::: {.column width="40%"}
+
+::: {style="text-align: center;"}
+![](media/vbfoss.jpg){width="100%" fig-alt="Visual representation of FOSS concepts"}
+:::
+
+:::
+
+::::
+
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 15px; text-align: center; border: 2px solid #ff5555; color: #f8f8f2; margin-top: 20px; font-size: 0.85em;"}
 
-**Disclaimer:** I am not a lawyer. This presentation is for educational purposes only and does not constitute legal advice.
+**Disclaimer:** Educational purposes only. Not legal advice.
 
 :::
 
@@ -110,7 +130,9 @@ A Historical Perspective
 - Source code shared freely among researchers
 - Collaboration was the norm
 
+::: {style="text-align: center;"}
 ![](https://cdn-icons-png.flaticon.com/512/2942/2942156.png){width="200" fig-alt="Collaboration icon"}
+:::
 
 :::
 
@@ -123,7 +145,9 @@ A Historical Perspective
 - Proprietary licenses became standard
 - Source code became trade secret
 
+::: {style="text-align: center;"}
 ![](https://cdn-icons-png.flaticon.com/512/3135/3135706.png){width="200" fig-alt="Business revenue icon"}
+:::
 
 :::
 
@@ -395,7 +419,9 @@ Redis switched from BSD to SSPL/RSALv2 (2024), forcing companies to pay or migra
 
 ::: {.column width="30%"}
 
+::: {style="text-align: center;"}
 ![](media/redis.jpg){width="250" fig-alt="Redis logo"}
+:::
 
 :::
 
@@ -511,7 +537,9 @@ CVEs can enable:
 
 ::: {.column width="40%" .fragment}
 
+::: {style="text-align: center;"}
 ![](media/patch.jpeg){fig-alt="Meme showing open source developer applying a patch to fix software vulnerability (Flex Seal format)"}
+:::
 
 :::
 
@@ -625,7 +653,9 @@ Business impact:
 
 ::: {.column width="40%"}
 
+::: {style="text-align: center;"}
 ![](media/eghbal.jpg){width="280" fig-alt="Book cover: Working in Public by Nadia Eghbal"}
+:::
 
 :::
 
@@ -762,7 +792,9 @@ Free, open-source, widely adopted in CI/CD pipelines
 
 ::: {.column width="30%"}
 
+::: {style="text-align: center;"}
 ![](media/trivy.png){width="180" fig-alt="Trivy logo"}
+:::
 
 :::
 
@@ -798,7 +830,9 @@ Enterprise support, extensive database, advanced reporting
 
 ::: {.column width="30%"}
 
+::: {style="text-align: center;"}
 ![](media/blackduck.png){width="180" fig-alt="Black Duck logo"}
+:::
 
 :::
 

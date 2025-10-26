@@ -12,7 +12,7 @@
   <meta name="generator" content="quarto-1.9.8">
 
   <meta name="author" content="Indrajeet Patil">
-  <meta name="dcterms.date" content="2025-10-26 11:24:06.425299">
+  <meta name="dcterms.date" content="2025-10-26 11:39:35.349856">
   <meta name="keywords" content="FOSS, open-source, enterprise, software-licensing, security">
   <title>FOSS for Enterprise</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -233,7 +233,9 @@
 </div>
 </div>
 </div><div class="column" style="width:40%;">
+<div style="text-align: center;">
 <p><img data-src="media/dependency.png" alt="xkcd comic showing modern digital infrastructure precariously balanced on a small project maintained by one person since 2003" width="400" height="400"></p>
+</div>
 <div style="text-align: center; font-size: 0.4em; margin-top: -7px;">
 <p>(<a href="https://xkcd.com/2347/">xkcd</a>, CC BY-NC 2.5)</p>
 </div>
@@ -244,18 +246,29 @@
 </section>
 <section id="what-youll-learn-today" class="slide level2 smaller">
 <h2>What you’ll learn today</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
 <ul>
-<li>History of Free and Open Source Software (FOSS)</li>
-<li>Key differences between software licenses</li>
-<li>Legal implications of using open source software</li>
-<li>Enterprise risks when using FOSS</li>
+<li>FOSS licensing history and philosophies</li>
+<li>Legal implications and compliance requirements</li>
+<li>Enterprise risks: security, sustainability, and violations</li>
 <li>Automated tools for managing open source dependencies</li>
 </ul>
-<div style="background-color: #44475a; padding: 20px; border-radius: 25px; text-align: center; border: 2px solid #ffb86c; color: #f8f8f2;">
-<p><strong><em>Scope</em></strong> <br> Focus: <strong>inbound FOSS</strong> (using open source in products) <br> <strong>Outbound FOSS</strong> (releasing as open source) is out of scope</p>
+<div style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-top: 20px; border: 3px solid #ffb86c; color: #f8f8f2;">
+<div style="text-align: center; font-size: 1.1em; font-weight: bold; color: #ffb86c; margin-bottom: 12px;">
+<p>Scope</p>
 </div>
+<div style="font-size: 0.8em; line-height: 1.6;">
+<p>✅ <strong>Inbound FOSS</strong> • Using open source in your products<br> ❌ <strong>Outbound FOSS</strong> • Releasing your code as open source</p>
+</div>
+</div>
+</div><div class="column" style="width:40%;">
+<div style="text-align: center;">
+<p><img data-src="media/vbfoss.jpg" style="width:100.0%" alt="Visual representation of FOSS concepts"></p>
+</div>
+</div></div>
 <div style="background-color: #44475a; padding: 15px; border-radius: 15px; text-align: center; border: 2px solid #ff5555; color: #f8f8f2; margin-top: 20px; font-size: 0.85em;">
-<p><strong>Disclaimer:</strong> I am not a lawyer. This presentation is for educational purposes only and does not constitute legal advice.</p>
+<p><strong>Disclaimer:</strong> Educational purposes only. Not legal advice.</p>
 </div>
 </section>
 <section>
@@ -273,7 +286,9 @@
 <li>Source code shared freely among researchers</li>
 <li>Collaboration was the norm</li>
 </ul>
+<div style="text-align: center;">
 <p><img data-src="https://cdn-icons-png.flaticon.com/512/2942/2942156.png" alt="Collaboration icon" width="200"></p>
+</div>
 </div><div class="column fragment" style="width:50%;">
 <p><strong>Then came commercialization</strong></p>
 <ul>
@@ -282,7 +297,9 @@
 <li>Proprietary licenses became standard</li>
 <li>Source code became trade secret</li>
 </ul>
+<div style="text-align: center;">
 <p><img data-src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Business revenue icon" width="200"></p>
+</div>
 </div></div>
 </section>
 <section id="the-foss-movement" class="slide level2 smaller">
@@ -507,7 +524,9 @@
 <p>Redis switched from BSD to SSPL/RSALv2 (2024), forcing companies to pay or migrate</p>
 <p><strong>Lesson:</strong> Monitor upstream license changes actively!</p>
 </div><div class="column" style="width:30%;">
+<div style="text-align: center;">
 <p><img data-src="media/redis.jpg" alt="Redis logo" width="250"></p>
+</div>
 </div></div>
 </div>
 </div>
@@ -588,7 +607,9 @@
 </ul>
 </div>
 </div><div class="column fragment" style="width:40%;">
+<div style="text-align: center;">
 <p><img data-src="media/patch.jpeg" alt="Meme showing open source developer applying a patch to fix software vulnerability (Flex Seal format)"></p>
+</div>
 </div></div>
 </section>
 <section id="case-studies-vulnerabilities" class="slide level2 smaller">
@@ -667,7 +688,9 @@
 </ul>
 </div>
 </div><div class="column" style="width:40%;">
+<div style="text-align: center;">
 <p><img data-src="media/eghbal.jpg" alt="Book cover: Working in Public by Nadia Eghbal" width="280"></p>
+</div>
 </div></div>
 <div class="fragment">
 <div style="background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ffb86c; color: #f8f8f2; font-size: 0.75em; margin-top: 15px; text-align: center;">
@@ -798,7 +821,9 @@
 <p>Free, open-source, widely adopted in CI/CD pipelines</p>
 </div>
 </div><div class="column" style="width:30%;">
+<div style="text-align: center;">
 <p><img data-src="media/trivy.png" alt="Trivy logo" width="180"></p>
+</div>
 </div></div>
 </section>
 <section id="commercial-tool-black-duck" class="slide level2 smaller">
@@ -821,7 +846,9 @@ detect.policy.check.fail.on.severities=BLOCKER,CRITICAL</code></pre>
 <p>Enterprise support, extensive database, advanced reporting</p>
 </div>
 </div><div class="column" style="width:30%;">
+<div style="text-align: center;">
 <p><img data-src="media/blackduck.png" alt="Black Duck logo" width="180"></p>
+</div>
 </div></div>
 </section>
 <section id="integrating-tools-into-your-workflow" class="slide level2 smaller">
