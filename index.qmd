@@ -56,7 +56,7 @@ Indrajeet Patil
 
 ::: {.column width="40%"}
 
-![](media/dependency.png){width="400" height="400" fig-alt="Software dependency illustration"}
+![](media/dependency.png){width="400" height="400" fig-alt="xkcd comic showing modern digital infrastructure precariously balanced on a small project maintained by one person since 2003"}
 
 ::: {style="text-align: center; font-size: 0.4em; margin-top: -7px;"}
 ([xkcd](https://xkcd.com/2347/), CC BY-NC 2.5)
@@ -140,7 +140,7 @@ Free Software
 :::
 
 ::: {style="text-align: center;"}
-![](media/free_as_in_freedom.jpg){width="200" fig-alt="Free as in freedom"}
+![](media/free_as_in_freedom.jpg){width="200" fig-alt="Book cover: Free as in Freedom - Richard Stallman's Crusade for Free Software by Sam Williams"}
 :::
 
 **Free Software Foundation (1985)**
@@ -218,7 +218,7 @@ flowchart TD
 
 :::
 
-![](media/laurent.jpg){width="250" fig-alt="Laurent illustration"}
+![](media/laurent.jpg){width="250" fig-alt="Book cover: Understanding Open Source & Free Software Licensing by Andrew M. St. Laurent"}
 
 :::
 
@@ -511,7 +511,7 @@ CVEs can enable:
 
 ::: {.column width="40%" .fragment}
 
-![](media/patch.jpeg){fig-alt="Patch illustration"}
+![](media/patch.jpeg){fig-alt="Meme showing open source developer applying a patch to fix software vulnerability (Flex Seal format)"}
 
 :::
 
@@ -625,7 +625,7 @@ Business impact:
 
 ::: {.column width="40%"}
 
-![](media/abandoned.jpg){width="280" fig-alt="Abandoned project illustration"}
+![](media/eghbal.jpg){width="280" fig-alt="Book cover: Working in Public by Nadia Eghbal"}
 
 :::
 
