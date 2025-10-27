@@ -116,43 +116,6 @@ Scope
 
 # FOSS Licensing
 
-A Historical Perspective
-
-## In the beginning... {.smaller}
-
-:::: {.columns}
-
-::: {.column width="50%" .fragment}
-
-**Software was free**
-
-- 1950s-1970s: Software bundled with hardware
-- Source code shared freely among researchers
-- Collaboration was the norm
-
-::: {style="text-align: center;"}
-![](https://cdn-icons-png.flaticon.com/512/2942/2942156.png){width="200" fig-alt="Collaboration icon"}
-:::
-
-:::
-
-::: {.column width="50%" .fragment}
-
-**Then came commercialization**
-
-- Late 1970s-1980s: Software became a product
-- Companies realized revenue potential
-- Proprietary licenses became standard
-- Source code became trade secret
-
-::: {style="text-align: center;"}
-![](https://cdn-icons-png.flaticon.com/512/3135/3135706.png){width="200" fig-alt="Business revenue icon"}
-:::
-
-:::
-
-::::
-
 ## The FOSS Movement {.smaller}
 
 ::: {style="display: flex; gap: 20px;"}
