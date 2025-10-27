@@ -4,11 +4,13 @@ This presentation provides a comprehensive overview of Free and Open Source Soft
 
 ## Topics Covered
 
-- **History of FOSS**: From free software to the open source movement
+- **FOSS Movement**: Free Software Foundation vs. Open Source Initiative
 - **Software Licenses**: Understanding reciprocal (copyleft) vs. permissive licenses
 - **Legal Aspects**: When licenses matter and what triggers obligations
-- **Enterprise Risks**: Common pitfalls and the Equifax breach case study
+- **Enterprise Risks**: License compliance, security vulnerabilities, and sustainability concerns
+- **Case Studies**: Real-world examples including Equifax, Log4Shell, Heartbleed, license violations, and sustainability failures
 - **Automated Tools**: Using Trivy and Black Duck for FOSS management
+- **Worth it?**: Why FOSS is essential for modern software development
 
 The slides can be seen here:<br>
 <https://indrajeetpatil.github.io/foss-for-enterprise/>

@@ -659,7 +659,7 @@ Package Removal
 :::
 
 ::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
-[core-js (ongoing)](https://www.theregister.com/2023/02/15/corejs_russia_open_source/)
+[core-js (2023)](https://www.theregister.com/2023/02/15/corejs_russia_open_source/)
 :::
 
 ::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
