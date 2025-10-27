@@ -405,27 +405,15 @@ Non-compliance consequences:
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.85em;"}
 
-:::: {.columns}
-
-::: {.column width="70%"}
-
 **License changes can break your business:**
 
-Redis switched from BSD to SSPL/RSALv2 (2024), forcing companies to pay or migrate
+Major FOSS projects have switched licenses, forcing companies to pay or migrate:
+
+- [Redis](https://techcrunch.com/2024/03/20/redis-license-change/) (BSD → SSPL/RSALv2, 2024)
+- [Elasticsearch](https://www.elastic.co/blog/licensing-change) (Apache 2.0 → SSPL, 2021)
+- [MongoDB](https://techcrunch.com/2018/10/16/mongodb-switches-up-its-open-source-license/) (AGPL → SSPL, 2018)
 
 **Lesson:** Monitor upstream license changes actively!
-
-:::
-
-::: {.column width="30%"}
-
-::: {style="text-align: center;"}
-![](media/redis.jpg){width="250" fig-alt="Redis logo"}
-:::
-
-:::
-
-::::
 
 :::
 
@@ -566,7 +554,7 @@ Unpatched Apache Struts
 :::
 
 ::: {style="flex-grow: 1;"}
-147.9M Americans + 15.2M British affected. Patch available 2 months before breach. Cost: $575M settlement.
+> 150M people affected. Patch available 2 months before breach. Cost: $575M settlement.
 :::
 
 **Takeaway:** Delaying patches costs hundreds of millions
@@ -867,6 +855,118 @@ flowchart LR
     style E fill:#ffebee
     style F fill:#e8f5e9
 ```
+
+# Worth it?
+
+## Is FOSS worth the risk? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 3px solid #ff5555; color: #f8f8f2;"}
+
+::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ff5555; margin-bottom: 15px;"}
+We've seen the risks...
+:::
+
+- License compliance challenges
+- Security vulnerabilities
+- Sustainability concerns
+- Legal complications
+
+:::
+
+:::
+
+::: {.column width="50%" .fragment}
+
+::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 3px solid #50fa7b; color: #f8f8f2;"}
+
+::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #50fa7b; margin-bottom: 15px;"}
+But the answer is YES! ✓
+:::
+
+- Innovation without reinventing
+- Massive cost savings
+- Battle-tested solutions
+- Vibrant ecosystems
+
+:::
+
+:::
+
+::::
+
+::: {style="background-color: #44475a; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #ffb86c; color: #f8f8f2; font-size: 1.1em; font-weight: bold;"}
+
+The key: **Understand the risks and manage them proactively**
+
+:::
+
+## The modern stack is FOSS {.smaller}
+
+::: {style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 25px 0;"}
+
+::: {style="background: linear-gradient(135deg, #0d7377 0%, #14b8a6 100%); padding: 22px; border-radius: 12px; border: 3px solid #8be9fd; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+
+::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
+🎨 Frontend
+:::
+
+::: {style="font-size: 0.9em; text-align: center; line-height: 1.9; color: #f0f9ff;"}
+**TypeScript** • **React** • **Vue**<br/>
+**Webpack** • **Vite** • **npm**
+:::
+
+:::
+
+::: {style="background: linear-gradient(135deg, #047857 0%, #10b981 100%); padding: 22px; border-radius: 12px; border: 3px solid #50fa7b; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+
+::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
+⚙️ Backend
+:::
+
+::: {style="font-size: 0.9em; text-align: center; line-height: 1.9; color: #f0fdf4;"}
+**Python** • **Node.js** • **Java**<br/>
+**FastAPI** • **Django** • **Express**
+:::
+
+:::
+
+::: {style="background: linear-gradient(135deg, #c2410c 0%, #f97316 100%); padding: 22px; border-radius: 12px; border: 3px solid #ffb86c; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+
+::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
+💾 Data Layer
+:::
+
+::: {style="font-size: 0.9em; text-align: center; line-height: 1.9; color: #fffbeb;"}
+**PostgreSQL** • **MySQL** • **Redis**<br/>
+**MongoDB** • **Kafka** • **Elasticsearch**
+:::
+
+:::
+
+::: {style="background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%); padding: 22px; border-radius: 12px; border: 3px solid #bd93f9; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+
+::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
+☁️ Infrastructure
+:::
+
+::: {style="font-size: 0.9em; text-align: center; line-height: 1.9; color: #faf5ff;"}
+**Docker** • **Kubernetes** • **Linux**<br/>
+**Terraform** • **Ansible** • **Git**
+:::
+
+:::
+
+:::
+
+::: {style="background-color: #44475a; padding: 25px; border-radius: 15px; border: 3px solid #50fa7b; color: #f8f8f2; text-align: center; font-size: 1em; font-weight: bold; margin-top: 10px;"}
+
+You're already using FOSS everywhere. The question isn't *whether* to use it, but *how to use it safely*.
+
+:::
 
 # Summary
 
