@@ -366,7 +366,7 @@ Non-compliance consequences:
 
 . . .
 
-::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.85em;"}
+::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.7em;"}
 
 **License changes can break your business:**
 
@@ -517,7 +517,7 @@ Unpatched Apache Struts
 :::
 
 ::: {style="flex-grow: 1;"}
-> 150M people affected. Patch available 2 months before breach. Cost: $575M settlement.
+150M+ people affected. Patch available 2 months before breach. Cost: $575M settlement.
 :::
 
 **Takeaway:** Delaying patches costs hundreds of millions
