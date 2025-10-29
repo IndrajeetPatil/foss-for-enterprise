@@ -223,7 +223,7 @@ flowchart TD
 
 ## Effects on derivative work {.smaller}
 
-**Derivative work:** Modifications, extensions, and (sometimes) linking to original software
+**Derivative work:** Modifications, extensions, and linking to original software
 
 ::: {style="display: flex; gap: 20px;"}
 
@@ -860,12 +860,6 @@ But the answer is YES! ✓
 :::
 
 ::::
-
-::: {style="background-color: #44475a; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #ffb86c; color: #f8f8f2; font-size: 1.1em; font-weight: bold;"}
-
-The key: **Understand the risks and manage them proactively**
-
-:::
 
 ## The modern stack is FOSS {.smaller}
 
