@@ -213,6 +213,8 @@ flowchart TD
 
 ## Movements ↔ Licence Philosophies {.smaller}
 
+::: {style="font-size: 0.8em;"}
+
 |                     | **Reciprocal (Copyleft)**                  | **Permissive**                          |
 |---------------------|--------------------------------------------|-----------------------------------------|
 | **Origin**          | Free Software Movement                     | Open Source Initiative                  |
@@ -221,53 +223,95 @@ flowchart TD
 | **Examples**        | GPL, AGPL, MPL                             | MIT, BSD, Apache                        |
 | **Goal**            | Ensure software remains free               | Enable broad adoption and use           |
 
-## Effects on derivative work {.smaller}
-
-**Derivative work:** Modifications, extensions, and linking to original software
-
-::: {style="display: flex; gap: 20px;"}
-
-::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; text-align: center;"}
-
-::: {style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"}
-GPL-2 (Reciprocal)
 :::
 
-![](https://cdn-icons-png.flaticon.com/512/1161/1161388.png){width="120" fig-alt="Chain link icon" style="display: block; margin: 0 auto;"}
+<br>
 
-::: {style="font-size: 0.85em; margin-top: 10px; text-align: left;"}
-
-::: {style="font-weight: bold; font-size: 1.1em; margin-bottom: 8px;"}
-Derivative work restrictions:
+::: {style="font-weight: bold; font-size: 1.05em; margin-bottom: 12px; text-align: center;"}
+License Combination Examples:
 :::
 
-- Modified code → Must be GPL-2
-- Linked libraries → Must be GPL-2
-- Combined works → Must be GPL-2
-- Source code must be disclosed
+::: {style="display: flex; gap: 20px; justify-content: center;"}
 
+::: {style="flex: 1; background-color: #44475a; padding: 18px; border-radius: 10px; border: 2px solid #8be9fd; color: #f8f8f2; text-align: center;"}
+
+::: {style="display: flex; flex-direction: column; align-items: center; gap: 12px;"}
+
+::: {style="display: flex; align-items: center; justify-content: center; gap: 20px;"}
+::: {style="width: 60px; text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/1161/1161388.png){width="40" fig-alt="Chain link icon" style="vertical-align: middle;"}
+:::
+::: {style="width: 30px; text-align: center; font-size: 1.2em; font-weight: bold;"}
++
+:::
+::: {style="width: 60px; text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/4021/4021426.png){width="40" fig-alt="Code icon" style="vertical-align: middle;"}
+:::
+::: {style="width: 30px; text-align: center; font-size: 1.2em; font-weight: bold;"}
+=
+:::
+::: {style="width: 60px; text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/1161/1161388.png){width="40" fig-alt="Chain link icon" style="vertical-align: middle;"}
+:::
+:::
+
+::: {style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 0.75em; color: #8be9fd; width: 100%;"}
+::: {style="width: 60px; text-align: center;"}
+Copyleft
+:::
+::: {style="width: 30px; text-align: center;"}
+:::
+::: {style="width: 60px; text-align: center;"}
+Custom
+:::
+::: {style="width: 30px; text-align: center;"}
+:::
+::: {style="width: 60px; text-align: center;"}
+**Copyleft**
+:::
 :::
 
 :::
 
-::: {.fragment style="flex: 1; background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; text-align: center;"}
-
-::: {style="font-size: 1.2em; font-weight: bold; margin-bottom: 10px;"}
-MIT (Permissive)
 :::
 
-![](https://cdn-icons-png.flaticon.com/512/3004/3004458.png){width="120" fig-alt="Open hands icon" style="display: block; margin: 0 auto;"}
+::: {style="flex: 1; background-color: #44475a; padding: 18px; border-radius: 10px; border: 2px solid #bd93f9; color: #f8f8f2; text-align: center;"}
 
-::: {style="font-size: 0.85em; margin-top: 10px; text-align: left;"}
+::: {style="display: flex; flex-direction: column; align-items: center; gap: 12px;"}
 
-::: {style="font-weight: bold; font-size: 1.1em; margin-bottom: 8px;"}
-Derivative work freedom:
+::: {style="display: flex; align-items: center; justify-content: center; gap: 20px;"}
+::: {style="width: 60px; text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/3004/3004458.png){width="40" fig-alt="Open hands icon" style="vertical-align: middle;"}
+:::
+::: {style="width: 30px; text-align: center; font-size: 1.2em; font-weight: bold;"}
++
+:::
+::: {style="width: 60px; text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/4021/4021426.png){width="40" fig-alt="Code icon" style="vertical-align: middle;"}
+:::
+::: {style="width: 30px; text-align: center; font-size: 1.2em; font-weight: bold;"}
+=
+:::
+::: {style="width: 60px; text-align: center;"}
+![](https://cdn-icons-png.flaticon.com/512/2666/2666505.png){width="40" fig-alt="Choice icon" style="vertical-align: middle;"}
+:::
 :::
 
-- Modified code → Any license
-- Linked libraries → Any license
-- Combined works → Any license
-- Source code disclosure optional
+::: {style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 0.75em; color: #bd93f9; width: 100%;"}
+::: {style="width: 60px; text-align: center;"}
+Permissive
+:::
+::: {style="width: 30px; text-align: center;"}
+:::
+::: {style="width: 60px; text-align: center;"}
+Custom
+:::
+::: {style="width: 30px; text-align: center;"}
+:::
+::: {style="width: 60px; text-align: center;"}
+**Any License**
+:::
+:::
 
 :::
 
