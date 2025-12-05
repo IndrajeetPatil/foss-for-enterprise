@@ -22,17 +22,14 @@ description-meta: "Understanding Free and Open Source Software for enterprise: l
 license: "CC0 1.0 Universal"
 pagetitle: "FOSS for Enterprise"
 author-meta: "Indrajeet Patil"
-date-meta: "`r Sys.time()`"
+date-meta: "2025-12-05"
 lang: "en"
 dir: "ltr"
 image: "media/dependency.png"
 image-alt: "FOSS for Enterprise - Software dependency illustration from xkcd"
 canonical-url: "https://indrajeetpatil.github.io/foss-for-enterprise/"
+jupyter: python3
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(eval = FALSE)
-```
 
 ## FOSS for Enterprise {style="margin-top: 2em; margin-bottom: 1em;"}
 

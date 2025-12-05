@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:quarto.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:revealjs.com)",
+      "Bash(rg:*)",
+      "Bash(sed:*)",
+      "WebFetch(domain:pandoc.org)",
+      "Bash(cat:*)",
+      "Bash(uv venv:*)",
+      "Bash(uv pip install:*)",
+      "Bash(source .venv/bin/activate)",
+      "Bash(quarto check:*)",
+      "Bash(uv sync:*)",
+      "Bash(uv run:*)",
+      "Bash(just help:*)",
+      "Bash(just check:*)",
+      "Bash(uv python:*)",
+      "Bash(uv --version:*)",
+      "Bash(just clean:*)",
+      "Bash(uv lock:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
