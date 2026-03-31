@@ -27,7 +27,7 @@ This presentation focuses on **inbound FOSS** (using open source software in you
 
 # Development
 
-This project uses Python 3.13+ with [uv](https://docs.astral.sh/uv/) for dependency management, [Quarto](https://quarto.org/) for rendering slides, and [just](https://github.com/casey/just) as a command runner.
+This project uses Python 3.14+ with [uv](https://docs.astral.sh/uv/) for dependency management, [Quarto](https://quarto.org/) for rendering slides, and [just](https://github.com/casey/just) as a command runner.
 
 ## Prerequisites
 
@@ -61,6 +61,10 @@ just           # Install, render, and open slides (default)
 ## Acknowledgments
 
 The dependency illustration in the title slide is from [xkcd #2347: Dependency](https://xkcd.com/2347/) by Randall Munroe, licensed under [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/).
+
+## GitHub Pages deployment (automatic)
+
+This repository uses GitHub Actions to render the slides and deploy the rendered `_site/` directory to GitHub Pages.
 
 # Feedback
 
