@@ -13,9 +13,9 @@ This presentation provides a comprehensive overview of Free and Open Source Soft
 - **Worth it?**: Why FOSS is essential for modern software development
 
 The slides can be seen here:<br>
-<https://indrajeetpatil.github.io/foss-for-enterprise/>
+<https://www.indrapatil.com/foss-for-enterprise/>
 
-<a href="https://indrajeetpatil.github.io/foss-for-enterprise/" target="_blank">
+<a href="https://www.indrapatil.com/foss-for-enterprise/" target="_blank">
 <img src="media/dependency.png" alt="FOSS for Enterprise - Dependency" width="500"/>
 </a>
 

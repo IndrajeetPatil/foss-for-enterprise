@@ -26,7 +26,7 @@ lang: "en"
 dir: "ltr"
 image: "media/dependency.png"
 image-alt: "FOSS for Enterprise - Software dependency illustration from xkcd"
-canonical-url: "https://indrajeetpatil.github.io/foss-for-enterprise/"
+canonical-url: "https://www.indrapatil.com/foss-for-enterprise/"
 jupyter: python3
 ---
 
@@ -1007,7 +1007,7 @@ Happy FOSSing! 😊
 
 ::: {style="text-align: center; font-size: 0.7em;"}
 
-Check out my other [slide decks](https://indrajeetpatil.github.io/presentations/) on software development best practices
+Check out my other [slide decks](https://www.indrapatil.com/presentations/) on software development best practices
 
 :::
 
