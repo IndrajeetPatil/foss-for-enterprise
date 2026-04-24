@@ -1,0 +1,10 @@
+# FOSS for Enterprise
+
+This is the well-known discovery copy for agentic assistants.
+
+Canonical slides: https://www.indrapatil.com/foss-for-enterprise/
+Root llms.txt: https://www.indrapatil.com/foss-for-enterprise/llms.txt
+Root llms-full.txt: https://www.indrapatil.com/foss-for-enterprise/llms-full.txt
+Source: https://github.com/IndrajeetPatil/foss-for-enterprise/
+
+Summary: Understanding Free and Open Source Software for enterprise: licenses, risks, and automated tools for managing open source dependencies.

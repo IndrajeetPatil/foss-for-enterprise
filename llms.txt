@@ -1,0 +1,28 @@
+# FOSS for Enterprise
+
+> A Quarto RevealJS presentation by Indrajeet Patil.
+
+Understanding Free and Open Source Software for enterprise: licenses, risks, and automated tools for managing open source dependencies.
+
+## Primary URL
+
+- [Slides](https://www.indrapatil.com/foss-for-enterprise/)
+
+## Source
+
+- [GitHub repository](https://github.com/IndrajeetPatil/foss-for-enterprise/)
+
+## Topics
+
+- FOSS
+- open source
+- enterprise
+- software licensing
+- security
+- free open source software
+- presentation
+- slides
+
+## Machine-readable companion
+
+- [Full agent summary](https://www.indrapatil.com/foss-for-enterprise/llms-full.txt)
