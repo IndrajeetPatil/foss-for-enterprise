@@ -16,7 +16,7 @@ The slides can be seen here:<br>
 <https://www.indrapatil.com/foss-for-enterprise/>
 
 <a href="https://www.indrapatil.com/foss-for-enterprise/" target="_blank" rel="noopener noreferrer">
-<img src="media/dependency.png" alt="FOSS for Enterprise - Dependency" width="500"/>
+<img src="media/dependency.webp" alt="FOSS for Enterprise - Dependency" width="500"/>
 </a>
 
 ## Scope
