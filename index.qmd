@@ -24,7 +24,7 @@ author-meta: "Indrajeet Patil"
 date-meta: "2025-12-05"
 lang: "en"
 dir: "ltr"
-image: "media/dependency.png"
+image: "media/dependency.webp"
 image-alt: "FOSS for Enterprise - Software dependency illustration from xkcd"
 canonical-url: "https://www.indrapatil.com/foss-for-enterprise/"
 jupyter: python3
@@ -53,7 +53,7 @@ Indrajeet Patil
 ::: {.column width="40%"}
 
 ::: {style="text-align: center;"}
-![](media/dependency.png){width="400" height="400" fig-alt="xkcd comic showing modern digital infrastructure precariously balanced on a small project maintained by one person since 2003"}
+![](media/dependency.webp){width="400" height="400" fig-alt="xkcd comic showing modern digital infrastructure precariously balanced on a small project maintained by one person since 2003"}
 :::
 
 ::: {style="text-align: center; font-size: 0.4em; margin-top: -7px;"}
@@ -97,7 +97,7 @@ Scope
 ::: {.column width="40%"}
 
 ::: {style="text-align: center;"}
-![](media/vbfoss.jpg){width="100%" fig-alt="Visual representation of FOSS concepts"}
+![](media/vbfoss.webp){width="100%" fig-alt="Visual representation of FOSS concepts"}
 :::
 
 :::
@@ -123,7 +123,7 @@ Free Software
 :::
 
 ::: {style="text-align: center;"}
-![](media/free_as_in_freedom.jpg){width="200" fig-alt="Book cover: Free as in Freedom - Richard Stallman's Crusade for Free Software by Sam Williams"}
+![](media/free_as_in_freedom.webp){width="200" fig-alt="Book cover: Free as in Freedom - Richard Stallman's Crusade for Free Software by Sam Williams"}
 :::
 
 **Free Software Foundation (1985)**
@@ -201,7 +201,7 @@ flowchart TD
 
 :::
 
-![](media/laurent.jpg){width="250" fig-alt="Book cover: Understanding Open Source & Free Software Licensing by Andrew M. St. Laurent"}
+![](media/laurent.webp){width="250" fig-alt="Book cover: Understanding Open Source & Free Software Licensing by Andrew M. St. Laurent"}
 
 :::
 
@@ -529,7 +529,7 @@ CVEs can enable:
 ::: {.column width="40%" .fragment}
 
 ::: {style="text-align: center;"}
-![](media/patch.jpeg){fig-alt="Meme showing open source developer applying a patch to fix software vulnerability (Flex Seal format)"}
+![](media/patch.webp){fig-alt="Meme showing open source developer applying a patch to fix software vulnerability (Flex Seal format)"}
 :::
 
 :::
@@ -645,7 +645,7 @@ Business impact:
 ::: {.column width="40%"}
 
 ::: {style="text-align: center;"}
-![](media/eghbal.jpg){width="280" fig-alt="Book cover: Working in Public by Nadia Eghbal"}
+![](media/eghbal.webp){width="280" fig-alt="Book cover: Working in Public by Nadia Eghbal"}
 :::
 
 :::
@@ -784,7 +784,7 @@ Free, open-source, widely adopted in CI/CD pipelines
 ::: {.column width="30%"}
 
 ::: {style="text-align: center;"}
-![](media/trivy.png){width="180" fig-alt="Trivy logo"}
+![](media/trivy.webp){width="180" fig-alt="Trivy logo"}
 :::
 
 :::
@@ -822,7 +822,7 @@ Enterprise support, extensive database, advanced reporting
 ::: {.column width="30%"}
 
 ::: {style="text-align: center;"}
-![](media/blackduck.png){width="180" fig-alt="Black Duck logo"}
+![](media/blackduck.webp){width="180" fig-alt="Black Duck logo"}
 :::
 
 :::
