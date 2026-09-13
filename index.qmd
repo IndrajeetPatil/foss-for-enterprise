@@ -10,6 +10,7 @@ format:
     touch: true
     help: true
     include-in-header: meta-tags.html
+    include-after-body: accessibility.html
     link-external-newwindow: true
 execute:
   echo: true
@@ -62,8 +63,8 @@ Indrajeet Patil
 
 ::::
 
-::: {style="text-align: center; font-size: 0.5em; color: #666;"}
-Source code for these slides can be found on [GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/)
+::: {style="text-align: center; font-size: 0.5em; color: #c7c7cf;"}
+Source code for these slides can be found on [GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/){style="text-decoration: underline;"}
 :::
 
 ## What you'll learn today {.smaller}
@@ -176,10 +177,10 @@ flowchart TD
     Expression --> Copyright[Copyright<br/>Original creative works<br/>Source code]
 
     style IP fill:#44475a,stroke:#f8f8f2,color:#f8f8f2
-    style Ideas fill:#6c6c6c,stroke:#999999,color:#cccccc
+    style Ideas fill:#6c6c6c,stroke:#999999,color:#f8f8f2
     style Expression fill:#50fa7b,stroke:#f8f8f2,color:#282a36,stroke-width:3px
-    style Patent fill:#3a3a3a,stroke:#666666,color:#888888
-    style Trademark fill:#3a3a3a,stroke:#666666,color:#888888
+    style Patent fill:#3a3a3a,stroke:#666666,color:#bdbdbd
+    style Trademark fill:#3a3a3a,stroke:#666666,color:#bdbdbd
     style Copyright fill:#50fa7b,stroke:#f8f8f2,color:#282a36,stroke-width:4px
 
     linkStyle 0 stroke:#666666,stroke-width:2px
@@ -209,7 +210,7 @@ flowchart TD
 
 ::: {style="font-size: 0.8em;"}
 
-|                     | **Reciprocal (Copyleft)**                  | **Permissive**                          |
+| **Aspect**          | **Reciprocal (Copyleft)**                  | **Permissive**                          |
 |---------------------|--------------------------------------------|-----------------------------------------|
 | **Origin**          | Free Software Movement                     | Open Source Initiative                  |
 | **Philosophy**      | Preserve freedom for all users             | Maximum freedom to developers           |
@@ -291,7 +292,7 @@ Custom
 :::
 :::
 
-::: {style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 0.75em; color: #bd93f9; width: 100%;"}
+::: {style="display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 0.75em; color: #d2b5ff; width: 100%;"}
 ::: {style="width: 60px; text-align: center;"}
 Permissive
 :::
@@ -341,7 +342,7 @@ Examples:
 
 ::: {.column width="50%" .fragment}
 
-::: {style="font-weight: bold; font-size: 1.05em; color: #ff5555; margin-bottom: 8px;"}
+::: {style="font-weight: bold; font-size: 1.05em; color: #ff8585; margin-bottom: 8px;"}
 IS distribution:
 :::
 
@@ -386,7 +387,7 @@ Common issues:
 
 ::: {.fragment style="flex: 1; background-color: #44475a; padding: 12px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
 
-::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff5555;"}
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff8585;"}
 Non-compliance consequences:
 :::
 
@@ -456,7 +457,7 @@ Linux developer sued VMware for GPL violation. VMware ultimately removed problem
 [Artifex vs. Hancom](https://www.fsf.org/blogs/licensing/update-on-artifex-v-hancom-gnu-gpl-compliance-case-1)
 :::
 
-::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+::: {style="background-color: #d2b5ff; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
 USA • Settled
 :::
 
@@ -500,7 +501,7 @@ First U.S. GPL enforcement lawsuits vs. Verizon, Best Buy, Samsung, and others.
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #ff5555; color: #f8f8f2;"}
 
-::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff5555;"}
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff8585;"}
 Common security risks:
 :::
 
@@ -550,7 +551,7 @@ CVEs can enable:
 [Equifax Breach (2017)](https://en.wikipedia.org/wiki/2017_Equifax_data_breach)
 :::
 
-::: {style="background-color: #ff5555; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+::: {style="background-color: #ff8585; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
 Unpatched Apache Struts
 :::
 
@@ -572,7 +573,7 @@ Unpatched Apache Struts
 [Log4Shell (2021)](https://en.wikipedia.org/wiki/Log4Shell)
 :::
 
-::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+::: {style="background-color: #d2b5ff; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
 CVSS 10/10 Critical
 :::
 
@@ -616,7 +617,7 @@ OpenSSL Memory Leak
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; margin-bottom: 15px; border: 2px solid #bd93f9; color: #f8f8f2; font-size: 0.8em;"}
 
-::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #bd93f9;"}
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #d2b5ff;"}
 Common sustainability issues:
 :::
 
@@ -628,7 +629,7 @@ Common sustainability issues:
 
 ::: {style="background-color: #44475a; padding: 15px; border-radius: 10px; border: 2px solid #ff5555; color: #f8f8f2; font-size: 0.8em;"}
 
-::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff5555;"}
+::: {style="font-weight: bold; font-size: 1.15em; margin-bottom: 10px; color: #ff8585;"}
 Business impact:
 :::
 
@@ -678,7 +679,7 @@ FOSS project at your product's heart = its sustainability is **your** sustainabi
 [left-pad (2016)](https://en.wikipedia.org/wiki/Npm_left-pad_incident)
 :::
 
-::: {style="background-color: #ff5555; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+::: {style="background-color: #ff8585; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
 Package Removal
 :::
 
@@ -700,7 +701,7 @@ Package Removal
 [core-js (2023)](https://www.theregister.com/2023/02/15/corejs_russia_open_source/)
 :::
 
-::: {style="background-color: #bd93f9; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
+::: {style="background-color: #d2b5ff; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
 Burnout & Underfunding
 :::
 
@@ -852,9 +853,10 @@ flowchart LR
     G --> H[Developer fixes]
     H --> A
 
-    style C fill:#e3f2fd
-    style E fill:#ffebee
-    style F fill:#e8f5e9
+    classDef default fill:#44475a,stroke:#f8f8f2,color:#f8f8f2
+    style C fill:#e3f2fd,color:#282a36
+    style E fill:#ffebee,color:#282a36
+    style F fill:#e8f5e9,color:#282a36
 ```
 
 # Worth it?
@@ -867,7 +869,7 @@ flowchart LR
 
 ::: {style="background-color: #44475a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 3px solid #ff5555; color: #f8f8f2;"}
 
-::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ff5555; margin-bottom: 15px;"}
+::: {style="text-align: center; font-size: 1.2em; font-weight: bold; color: #ff8585; margin-bottom: 15px;"}
 We've seen the risks...
 :::
 
@@ -903,7 +905,7 @@ But the answer is YES! ✓
 
 ::: {style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 25px 0;"}
 
-::: {style="background: linear-gradient(135deg, #0d7377 0%, #14b8a6 100%); padding: 22px; border-radius: 12px; border: 3px solid #8be9fd; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+::: {style="background: linear-gradient(135deg, #0d7377 0%, #0f766e 100%); padding: 22px; border-radius: 12px; border: 3px solid #8be9fd; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
 
 ::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
 🎨 Frontend
@@ -916,7 +918,7 @@ But the answer is YES! ✓
 
 :::
 
-::: {style="background: linear-gradient(135deg, #047857 0%, #10b981 100%); padding: 22px; border-radius: 12px; border: 3px solid #50fa7b; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+::: {style="background: linear-gradient(135deg, #047857 0%, #15803d 100%); padding: 22px; border-radius: 12px; border: 3px solid #50fa7b; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
 
 ::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
 ⚙️ Backend
@@ -929,7 +931,7 @@ But the answer is YES! ✓
 
 :::
 
-::: {style="background: linear-gradient(135deg, #c2410c 0%, #f97316 100%); padding: 22px; border-radius: 12px; border: 3px solid #ffb86c; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+::: {style="background: linear-gradient(135deg, #c2410c 0%, #b45309 100%); padding: 22px; border-radius: 12px; border: 3px solid #ffb86c; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
 
 ::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
 💾 Data Layer
@@ -942,7 +944,7 @@ But the answer is YES! ✓
 
 :::
 
-::: {style="background: linear-gradient(135deg, #6d28d9 0%, #8b5cf6 100%); padding: 22px; border-radius: 12px; border: 3px solid #bd93f9; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
+::: {style="background: linear-gradient(135deg, #6d28d9 0%, #7c3aed 100%); padding: 22px; border-radius: 12px; border: 3px solid #bd93f9; color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.3);"}
 
 ::: {style="font-size: 1.4em; font-weight: bold; margin-bottom: 12px; text-align: center; color: #ffffff;"}
 ☁️ Infrastructure
