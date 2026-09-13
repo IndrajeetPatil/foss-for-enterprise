@@ -63,7 +63,7 @@ Indrajeet Patil
 ::::
 
 ::: {style="text-align: center; font-size: 0.5em; color: #666;"}
-Source code for these slides can be found on [GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/)
+Source code for these slides can be found on [GitHub](https://github.com/IndrajeetPatil/foss-for-enterprise/){style="text-decoration: underline;"}
 :::
 
 ## What you'll learn today {.smaller}
