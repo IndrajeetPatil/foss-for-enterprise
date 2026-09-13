@@ -37,3 +37,20 @@
 .deck-icon-solid-envelope {
   --deck-icon-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBkPSJNNDggNjRDMjEuNSA2NCAwIDg1LjUgMCAxMTJjMCAxNS4xIDcuMSAyOS4zIDE5LjIgMzguNEwyMzYuOCAzMTMuNmMxMS40IDguNSAyNyA4LjUgMzguNCAwTDQ5Mi44IDE1MC40YzEyLjEtOS4xIDE5LjItMjMuMyAxOS4yLTM4LjRjMC0yNi41LTIxLjUtNDgtNDgtNDhMNDggNjR6TTAgMTc2TDAgMzg0YzAgMzUuMyAyOC43IDY0IDY0IDY0bDM4NCAwYzM1LjMgMCA2NC0yOC43IDY0LTY0bDAtMjA4TDI5NC40IDMzOS4yYy0yMi44IDE3LjEtNTQgMTcuMS03Ni44IDBMMCAxNzZ6Ii8+PC9zdmc+");
 }
+
+/* Body links remain recognizable without relying on the Dracula accent color. */
+.reveal p a,
+.reveal li a,
+.reveal td a {
+  text-decoration: underline;
+}
+
+/* The standard Dracula link color needs more contrast on the lighter cards. */
+.reveal .slides a {
+  color: #ff9fd6;
+}
+
+/* Mermaid edge labels use a light background even with the dark slide theme. */
+.reveal svg .edgeLabel p {
+  color: #282a36 !important;
+}
