@@ -1,0 +1,8 @@
+# LinkedIn returns HTTP 999 to every automated client as an anti-scraping
+# measure; the profile resolves normally in a browser.
+https://www\.linkedin\.com/.*
+
+# www.fsf.org negotiates only DHE key-exchange cipher suites and rejects ECDHE
+# with a handshake_failure; lychee's rustls backend implements no DHE, so the
+# handshake can never complete. The page itself serves 200 (verified via curl).
+https://www\.fsf\.org/.*
