@@ -18,6 +18,7 @@ accessibility.html  # Compatibility fixes supplementing the a11y extension
 style.css            # Custom RevealJS theme (fonts, colours, component classes)
 meta-tags.html       # OpenGraph, Twitter Card, JSON-LD, and analytics tags
 justfile             # Command runner (install, render, preview, clean, etc.)
+.editorconfig        # Shared editor settings (charset, EOL, indentation)
 media/               # Images: evidence screenshots, illustrations, social card
 llms.txt             # Short machine-readable summary for LLM discovery
 llms-full.txt        # Extended machine-readable summary
@@ -81,16 +82,17 @@ All commands use [just](https://github.com/casey/just). The recipes are the same
 
 ```bash
 just install   # Install language dependencies and the latest a11y extension
+just sync      # Alias for install
+just update    # Update language dependencies
 just render    # Render index.qmd to _site/
 just preview   # Live-reload dev server
 just open      # Alias for preview (live-reload dev server over localhost)
 just clean     # Remove build artifacts
 just check     # Verify Quarto setup
-just update    # Update language dependencies
 just axe       # Preview with the axe accessibility checker enabled
 ```
 
-Python decks wrap Quarto in `uv run` (e.g. `uv run quarto render index.qmd`), which syncs the locked environment and puts the project interpreter on `PATH` so Quarto discovers it automatically. R decks call `quarto render` directly (R is discovered automatically). See the `justfile` for exact commands.
+This deck renders with Quarto. Python dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml` + `uv.lock`); CI installs them with `uv sync --frozen`. Slides live in `index.qmd`.
 
 ## Editing slides
 

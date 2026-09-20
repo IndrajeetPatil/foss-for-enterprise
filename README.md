@@ -1,5 +1,7 @@
 # FOSS for Enterprise
 
+[![Build and Deploy Presentation](https://github.com/IndrajeetPatil/foss-for-enterprise/actions/workflows/build-presentation.yaml/badge.svg)](https://github.com/IndrajeetPatil/foss-for-enterprise/actions/workflows/build-presentation.yaml)
+
 This presentation provides a comprehensive overview of Free and Open Source Software (FOSS) for enterprise use, focusing on inbound FOSS consumption.
 
 ## Topics Covered
@@ -87,6 +89,6 @@ scroll views. Normal builds omit the axe checker.
 
 Feedback and suggestions are welcome in [the issue tracker](https://github.com/IndrajeetPatil/foss-for-enterprise/issues).
 
-## Acknowledgments
+## Acknowledgements
 
 The dependency illustration in the title slide is from [xkcd #2347: Dependency](https://xkcd.com/2347/) by Randall Munroe, licensed under [Creative Commons Attribution-NonCommercial 2.5 License](https://creativecommons.org/licenses/by-nc/2.5/).
