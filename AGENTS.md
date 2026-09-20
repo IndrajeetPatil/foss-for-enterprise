@@ -127,7 +127,7 @@ When modifying `index.qmd`:
 
 - Do not add new top-level files without a clear reason; the project intentionally has a flat structure.
 - Do not split `index.qmd` into multiple files.
-- Do not change the Quarto theme from `simple` or the output format from `revealjs`.
+- Do not change the Quarto theme from `dracula` or the output format from `revealjs`. `style.css` is written against the `dracula` palette, so switching themes silently breaks the slide colour scheme.
 - Do not enable code execution (`eval: true`) unless the presentation genuinely needs computed output.
 - Do not commit `_site/`, `_extensions/`, or `.quarto/` (all gitignored). For Python decks, `.venv/` is also gitignored; for R decks, `renv/library/` and `renv/staging/` are gitignored.
 - Do not modify the reusable CI workflow inline; it lives in a separate repository.
