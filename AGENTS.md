@@ -18,6 +18,7 @@ accessibility.html  # Compatibility fixes supplementing the a11y extension
 style.css            # Custom RevealJS theme (fonts, colours, component classes)
 meta-tags.html       # OpenGraph, Twitter Card, JSON-LD, and analytics tags
 justfile             # Command runner (install, render, preview, clean, etc.)
+.editorconfig        # Shared editor settings (charset, EOL, indentation)
 media/               # Images: evidence screenshots, illustrations, social card
 llms.txt             # Short machine-readable summary for LLM discovery
 llms-full.txt        # Extended machine-readable summary
@@ -65,8 +66,10 @@ Check which set is present to know which language context applies.
   Links inside muted text need a non-colour cue (e.g. `text-decoration: underline`) to satisfy WCAG 1.4.1.
   The `a11y` extension supplies zoom, focus indicators, link underlines, reduced motion,
   slide isolation, and screen-reader announcements. Keep `accessibility.html` for
-  code scrolling, menu focus, and vertical-slide semantics.
-  This deck has no tabsets; reassess keyboard handling if adding any.
+  code scrolling, menu focus, vertical-slide semantics, and tabset keyboard navigation.
+  `accessibility.html` is a shared fleet-wide helper and must stay byte-identical across
+  all decks; `check-template-drift.yaml` enforces this. This deck has no tabsets, so the
+  tabset branch is inert (a listener that never matches). Do not delete it locally.
   Disable the extension's slide-menu patch and settings menu as in the reference
   deck: version 0.2.3 introduces ARIA and contrast failures in those components.
 - **Icons.** Icons use lightweight HTML spans backed by only the required SVG path data in the custom stylesheet; no icon-font or Quarto icon extension is needed.
@@ -81,16 +84,17 @@ All commands use [just](https://github.com/casey/just). The recipes are the same
 
 ```bash
 just install   # Install language dependencies and the latest a11y extension
+just sync      # Alias for install
+just update    # Update language dependencies
 just render    # Render index.qmd to _site/
 just preview   # Live-reload dev server
 just open      # Alias for preview (live-reload dev server over localhost)
 just clean     # Remove build artifacts
 just check     # Verify Quarto setup
-just update    # Update language dependencies
 just axe       # Preview with the axe accessibility checker enabled
 ```
 
-Python decks wrap Quarto in `uv run` (e.g. `uv run quarto render index.qmd`), which syncs the locked environment and puts the project interpreter on `PATH` so Quarto discovers it automatically. R decks call `quarto render` directly (R is discovered automatically). See the `justfile` for exact commands.
+This deck renders with Quarto. Python dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml` + `uv.lock`); CI installs them with `uv sync --frozen`. Slides live in `index.qmd`.
 
 ## Editing slides
 
@@ -125,7 +129,7 @@ When modifying `index.qmd`:
 
 - Do not add new top-level files without a clear reason; the project intentionally has a flat structure.
 - Do not split `index.qmd` into multiple files.
-- Do not change the Quarto theme from `simple` or the output format from `revealjs`.
+- Do not change the Quarto theme from `dracula` or the output format from `revealjs`. `style.css` is written against the `dracula` palette, so switching themes silently breaks the slide colour scheme.
 - Do not enable code execution (`eval: true`) unless the presentation genuinely needs computed output.
 - Do not commit `_site/`, `_extensions/`, or `.quarto/` (all gitignored). For Python decks, `.venv/` is also gitignored; for R decks, `renv/library/` and `renv/staging/` are gitignored.
 - Do not modify the reusable CI workflow inline; it lives in a separate repository.

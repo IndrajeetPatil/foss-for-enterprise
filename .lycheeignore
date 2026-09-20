@@ -1,0 +1,24 @@
+# LinkedIn returns HTTP 999 to every automated client as an anti-scraping
+# measure; the profile resolves normally in a browser.
+https://www\.linkedin\.com/.*
+
+# www.fsf.org offers only finite-field DHE key exchange (TLS 1.2,
+# DHE-RSA-AES256-GCM-SHA384) and answers an ECDHE-only ClientHello with a
+# handshake_failure alert. lychee's rustls backend does ECDHE but implements
+# no finite-field DHE, so the handshake can never complete. The host is not
+# dead: curl over system TLS returns HTTP 200 with a valid certificate.
+https://www\.fsf\.org/.*
+
+# www.gnu.org answers automated clients from shared datacenter ranges with
+# HTTP 429; GitHub Actions runners sit in those ranges, so the check fails
+# there even when the pages are fine. Pacing requests to one at a time and
+# spacing them 2s apart did not help, which points at the source range
+# rather than burst rate. Both linked pages are alive: curl returns HTTP
+# 200 (Apache, valid certificate).
+https://www\.gnu\.org/.*
+
+# web.archive.org answers CI runners with HTTP 503 under rate limiting while
+# serving the same snapshot normally elsewhere (observed on a sibling deck,
+# whose check went red on a snapshot that returns 200 locally). Snapshots are
+# immutable, so there is no link rot here for the checker to catch.
+https://web\.archive\.org/.*

@@ -423,7 +423,7 @@ Non-compliance consequences:
 
 Major FOSS projects have switched licenses, forcing companies to pay or migrate:
 
-- [Redis](https://techcrunch.com/2024/03/20/redis-license-change/) (BSD → SSPL/RSALv2, 2024)
+- [Redis](https://techcrunch.com/2024/03/21/redis-switches-licenses-acquires-speedb-to-go-beyond-its-core-in-memory-database/) (BSD → SSPL/RSALv2, 2024)
 - [Elasticsearch](https://www.elastic.co/blog/licensing-change) (Apache 2.0 → SSPL, 2021)
 - [MongoDB](https://techcrunch.com/2018/10/16/mongodb-switches-up-its-open-source-license/) (AGPL → SSPL, 2018)
 
@@ -488,7 +488,7 @@ U.S. court ruled GPL is enforceable contract. Landmark Ghostscript case.
 :::
 
 ::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
-[BusyBox Lawsuits](https://softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
+[BusyBox Lawsuits](https://web.archive.org/web/20201222143328/https://www.softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
 :::
 
 ::: {style="background-color: #ffb86c; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
@@ -808,7 +808,7 @@ Free, open-source, widely adopted in CI/CD pipelines
 
 ::: {.column width="70%"}
 
-**[Black Duck](https://www.blackduck.com/)** by Synopsys - Enterprise-grade SCA platform
+**[Black Duck](https://www.blackduck.com/)** - Enterprise-grade SCA platform
 
 - Comprehensive vulnerability management
 - License compliance automation
@@ -1049,7 +1049,7 @@ Check out my other [slide decks](https://www.indrapatil.com/presentations/) on s
 
 - Aqua Security. "Trivy Documentation." <https://aquasecurity.github.io/trivy/>
 
-- Synopsys. "Black Duck Documentation." <https://synopsys.atlassian.net/wiki/spaces/INTDOCS/>
+- Black Duck. "Black Duck Documentation." <https://docs.blackduck.com/>
 
 - Choose a License. <https://choosealicense.com/>
 
