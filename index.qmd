@@ -488,7 +488,7 @@ U.S. court ruled GPL is enforceable contract. Landmark Ghostscript case.
 :::
 
 ::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
-[BusyBox Lawsuits](https://softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
+[BusyBox Lawsuits](https://web.archive.org/web/20201222143328/https://www.softwarefreedom.org/news/2009/dec/14/busybox-gpl-lawsuit/)
 :::
 
 ::: {style="background-color: #ffb86c; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
@@ -808,7 +808,7 @@ Free, open-source, widely adopted in CI/CD pipelines
 
 ::: {.column width="70%"}
 
-**[Black Duck](https://www.blackduck.com/)** by Synopsys - Enterprise-grade SCA platform
+**[Black Duck](https://www.blackduck.com/)** - Enterprise-grade SCA platform
 
 - Comprehensive vulnerability management
 - License compliance automation

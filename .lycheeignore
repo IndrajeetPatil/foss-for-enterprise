@@ -2,7 +2,9 @@
 # measure; the profile resolves normally in a browser.
 https://www\.linkedin\.com/.*
 
-# www.fsf.org negotiates only DHE key-exchange cipher suites and rejects ECDHE
-# with a handshake_failure; lychee's rustls backend implements no DHE, so the
-# handshake can never complete. The page itself serves 200 (verified via curl).
+# www.fsf.org offers only finite-field DHE key exchange (TLS 1.2,
+# DHE-RSA-AES256-GCM-SHA384) and answers an ECDHE-only ClientHello with a
+# handshake_failure alert. lychee's rustls backend does ECDHE but implements
+# no finite-field DHE, so the handshake can never complete. The host is not
+# dead: curl over system TLS returns HTTP 200 with a valid certificate.
 https://www\.fsf\.org/.*
