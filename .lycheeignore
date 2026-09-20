@@ -8,3 +8,11 @@ https://www\.linkedin\.com/.*
 # no finite-field DHE, so the handshake can never complete. The host is not
 # dead: curl over system TLS returns HTTP 200 with a valid certificate.
 https://www\.fsf\.org/.*
+
+# www.gnu.org answers automated clients from shared datacenter ranges with
+# HTTP 429; GitHub Actions runners sit in those ranges, so the check fails
+# there even when the pages are fine. Pacing requests to one at a time and
+# spacing them 2s apart did not help, which points at the source range
+# rather than burst rate. Both linked pages are alive: curl returns HTTP
+# 200 (Apache, valid certificate).
+https://www\.gnu\.org/.*

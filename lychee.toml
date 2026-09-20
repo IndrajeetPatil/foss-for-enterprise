@@ -1,8 +1,0 @@
-# www.gnu.org rate-limits bursts from a single IP with HTTP 429, which made
-# the link check fail intermittently (2 of 3 full runs) even though both
-# linked pages return 200. Pace requests to that host instead of ignoring
-# it: these are licence references, so they are exactly the links this
-# check exists to guard.
-[hosts."www.gnu.org"]
-concurrency = 1
-request_interval = "2s"
