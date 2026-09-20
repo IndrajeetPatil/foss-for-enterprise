@@ -66,8 +66,10 @@ Check which set is present to know which language context applies.
   Links inside muted text need a non-colour cue (e.g. `text-decoration: underline`) to satisfy WCAG 1.4.1.
   The `a11y` extension supplies zoom, focus indicators, link underlines, reduced motion,
   slide isolation, and screen-reader announcements. Keep `accessibility.html` for
-  code scrolling, menu focus, and vertical-slide semantics.
-  This deck has no tabsets; reassess keyboard handling if adding any.
+  code scrolling, menu focus, vertical-slide semantics, and tabset keyboard navigation.
+  `accessibility.html` is a shared fleet-wide helper and must stay byte-identical across
+  all decks; `check-template-drift.yaml` enforces this. This deck has no tabsets, so the
+  tabset branch is inert (a listener that never matches). Do not delete it locally.
   Disable the extension's slide-menu patch and settings menu as in the reference
   deck: version 0.2.3 introduces ARIA and contrast failures in those components.
 - **Icons.** Icons use lightweight HTML spans backed by only the required SVG path data in the custom stylesheet; no icon-font or Quarto icon extension is needed.
