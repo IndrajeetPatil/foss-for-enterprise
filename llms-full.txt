@@ -4,13 +4,13 @@ Author: Indrajeet Patil
 Format: Quarto RevealJS presentation
 Canonical URL: https://www.indrapatil.com/foss-for-enterprise/
 Source: https://github.com/IndrajeetPatil/foss-for-enterprise/
-License: CC0 1.0 Universal
+Licence: CC0 1.0 Universal
 Publication date: 2025-12-05
 Language: en
 
 ## Summary
 
-Understanding Free and Open Source Software for enterprise: licenses, risks, and automated tools for managing open source dependencies.
+Understanding Free and Open Source Software for enterprise: licences, risks, and automated tools for managing open source dependencies.
 
 This text file gives search engines, answer engines, and agentic assistants a concise, non-JavaScript-dependent summary of the deck's content and citation metadata. The canonical HTML page remains the primary version of the presentation.
 

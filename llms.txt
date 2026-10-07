@@ -2,7 +2,7 @@
 
 > A Quarto RevealJS presentation by Indrajeet Patil.
 
-Understanding Free and Open Source Software for enterprise: licenses, risks, and automated tools for managing open source dependencies.
+Understanding Free and Open Source Software for enterprise: licences, risks, and automated tools for managing open source dependencies.
 
 ## Primary URL
 
