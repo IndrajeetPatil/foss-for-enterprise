@@ -425,7 +425,7 @@ NOT distribution:
 Clarify the critical distinction between internal use and software distribution:
 - Internal use: Deploying software solely within an organisation's internal infrastructure rarely triggers copyleft obligations under standard GPLv2 or GPLv3 licences.
 - Distribution: Shipping software to clients, selling embedded hardware appliances, or distributing client-side mobile apps constitutes distribution, triggering mandatory source code disclosure for copyleft dependencies.
-- Note the AGPL exception: The Affero GPL explicitly closes the SaaS loophole by treating network access as distribution.
+- Note the AGPL requirement: Section 13 of the Affero GPL closes the SaaS loophole by requiring organisations that run a modified version on a server to offer the Corresponding Source to users interacting with it remotely over a network. Hosting an unmodified AGPL program does not trigger this obligation.
 :::
 
 # Enterprise Risks
@@ -757,9 +757,9 @@ FOSS project at your product's heart = its sustainability is **your** sustainabi
 
 ::: {.notes}
 Discuss open-source sustainability and maintainer burnout:
-The vast majority of critical open-source infrastructure is maintained by unpaid volunteers working in their spare time.
+Many critical dependencies rely on small maintainer teams or single individuals.
 
-When maintainers face burnout, financial pressure, or unconstructive demands, critical packages become unmaintained, abandoned, or subject to abrupt licence revocations.
+When maintainers face burnout, financial pressure, or unconstructive demands, critical packages become unmaintained, abandoned, or subject to abrupt licence changes.
 :::
 
 ## Case Studies: Sustainability Failures {.smaller}
