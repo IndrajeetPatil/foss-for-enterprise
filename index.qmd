@@ -697,7 +697,7 @@ OpenSSL Memory Leak
 
 ::: {.notes}
 Discuss prominent real-world security vulnerabilities:
-- Log4Shell (CVE-2021-44228): A critical JNDI remote code execution vulnerability in the Apache Log4j library that affected virtually every enterprise Java system worldwide.
+- Log4Shell (CVE-2021-44228): A critical JNDI remote code execution vulnerability in `log4j-core` that affected vulnerable Log4j deployments across numerous enterprise systems.
 - Heartbleed (CVE-2014-0160): A catastrophic buffer over-read in OpenSSL that allowed attackers to extract cryptographic private keys from active server memory.
 :::
 
