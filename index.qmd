@@ -81,9 +81,7 @@ Source code for these slides can be found on [GitHub](https://github.com/Indraje
 :::
 
 ::: {.notes}
-Introduce the presentation: Free and Open Source Software (FOSS) is the undisputed bedrock of modern enterprise infrastructure, yet navigating its legal, security, and supply-chain complexities requires deliberate governance.
-
-The objective today is to demystify open-source licences, examine critical enterprise risks, and explore automated tools that safeguard organisations without stifling developer velocity.
+Welcome. Free and open source software supports much of modern enterprise infrastructure. This talk looks at the licences, dependency risks, and maintenance practices that organisations need to understand when using it.
 :::
 
 ## What you'll learn today {.smaller}
@@ -129,18 +127,13 @@ Scope
 :::
 
 ::: {.notes}
-Outline the agenda for the talk:
-1. FOSS Licensing: The historical movements, philosophies, and the fundamental differences between permissive and copyleft licences.
-2. Legal Aspects: When licence obligations trigger, focusing on distribution versus internal use.
-3. Enterprise Risks: Compliance failures, security vulnerabilities, and maintainer sustainability crises with real-world case studies.
-4. Automated Tools: Software Composition Analysis (SCA) solutions like Trivy and Black Duck, and how to embed them into CI/CD pipelines.
-5. The Value Proposition: Why FOSS remains essential and how sensible governance unlocks its full value.
+We will begin with the ideas behind free and open source software and the main licence families. Then we will consider legal obligations, security and sustainability risks, and tools for managing dependencies. The goal is informed use of the ecosystem rather than avoiding it.
 :::
 
 # FOSS Licensing
 
 ::: {.notes}
-Introduce the first major section: understanding software licences, copyright foundations, and the core philosophies shaping open-source software.
+Licensing provides the foundation for using, modifying, and sharing software. Understanding that foundation helps explain both the freedoms open source offers and the conditions that accompany them.
 :::
 
 ## The FOSS Movement {.smaller}
@@ -188,10 +181,7 @@ Open Source Definition:
 :::
 
 ::: {.notes}
-Explain the history and evolution of the FOSS movement:
-- Richard Stallman and the Free Software movement (FSF, 1985): focused on user freedoms (the four essential freedoms) and philosophical rights.
-- The Open Source Initiative (OSI, 1998): reframed the movement around pragmatic benefits—peer review, reliability, security, and collaborative development.
-- Key takeaway: While both advocate for source code access, Free Software prioritises user liberty, whereas Open Source emphasises practical collaboration.
+The free software movement emphasises users' freedoms to use, study, modify, and share software. The open source movement also emphasises practical benefits such as peer review and collaboration. These perspectives overlap, while placing different emphasis on why access and redistribution matter.
 :::
 
 ## What are software licences? {.smaller}
@@ -246,10 +236,7 @@ flowchart TD
 :::
 
 ::: {.notes}
-Define what software licences are in legal terms:
-Software without a licence is not public domain; copyright automatically reserves all rights to the author.
-
-A licence is a legal contract granting specific permissions to use, modify, and distribute the software under defined conditions, limitations, and warranties.
+Publishing source code does not, by itself, put it in the public domain. A software licence states which permissions the copyright holder grants and under which conditions. Those conditions need to be understood alongside the code.
 :::
 
 ## Movements ↔ Licence Philosophies {.smaller}
@@ -361,15 +348,13 @@ Custom
 :::
 
 ::: {.notes}
-Contrast the two predominant licence philosophies:
-- Permissive licences (MIT, Apache 2.0, BSD): Maximise adoption by imposing minimal conditions. Anyone can incorporate the code into proprietary commercial products, usually requiring only attribution and warranty disclaimers.
-- Copyleft licences (GPL, LGPL, AGPL): Protect software reciprocity. They require derivative works to be released under the same licence, preventing proprietary closed-source capture.
+Permissive and copyleft licences take different approaches to reuse. Permissive licences generally allow incorporation into proprietary products while retaining specified notices and conditions. Copyleft licences preserve sharing obligations in the circumstances defined by each licence. The exact terms matter more than the family label alone.
 :::
 
 # Legal Aspects
 
 ::: {.notes}
-Introduce the legal aspects of open source: exploring trigger events and jurisdictional considerations.
+The next question is when licence obligations become relevant to a particular use of software. How the software is modified and shared is part of that assessment.
 :::
 
 ## When do licences matter? {.smaller}
@@ -423,16 +408,13 @@ NOT distribution:
 ::::
 
 ::: {.notes}
-Clarify the critical distinction between internal use and software distribution:
-- Internal use: Deploying software solely within an organisation's internal infrastructure rarely triggers copyleft obligations under standard GPLv2 or GPLv3 licences.
-- Distribution: Shipping software to clients, selling embedded hardware appliances, or distributing client-side mobile apps constitutes distribution, triggering mandatory source code disclosure for copyleft dependencies.
-- Note the AGPL requirement: Section 13 of the Affero GPL closes the SaaS loophole by requiring organisations that run a modified version on a server to offer the Corresponding Source to users interacting with it remotely over a network. Hosting an unmodified AGPL program does not trigger this obligation.
+Internal use and distribution are different situations under licences such as the GNU General Public License. The Affero licence also addresses remote interaction with a modified program over a network. These distinctions are a reason to check the actual licence and use case rather than assume that every dependency has the same obligations.
 :::
 
 # Enterprise Risks
 
 ::: {.notes}
-Introduce the core risks enterprises face when consuming open-source software without systematic oversight.
+Licensing is one part of the risk picture. Organisations also need to understand the security and maintenance of the dependencies they bring into a product.
 :::
 
 ## Lack of awareness and compliance {.smaller}
@@ -487,10 +469,7 @@ Major FOSS projects have switched licences, forcing companies to pay or migrate:
 :::
 
 ::: {.notes}
-Discuss the risk of licence ignorance and non-compliance:
-Developers frequently copy code snippets from public forums or pull in deep dependency trees without checking transitive licences.
-
-Non-compliance exposes companies to copyright infringement claims, forced source disclosure, injunctions halting product sales, and reputational damage.
+A dependency can arrive through a copied snippet or through another package's dependency tree. Without an inventory and a review process, its obligations may go unnoticed. Resolving non-compliance can then become much harder after a product has already shipped.
 :::
 
 ## Case Studies: Licence Violations {.smaller}
@@ -568,9 +547,7 @@ First U.S. GPL enforcement lawsuits vs. Verizon, Best Buy, Samsung, and others.
 :::
 
 ::: {.notes}
-Walk through historical case studies of licence enforcement:
-- Free Software Foundation vs. Cisco (Linksys WRT54G): Cisco acquired Linksys and distributed Linux-based firmware without publishing source code. The FSF sued, forcing Cisco to release complete build scripts and establish internal compliance processes.
-- Artifex vs. Hancom: A US federal court affirmed that open-source licences are legally binding contracts enforceable in court.
+The Cisco and Hancom cases show that open source licence conditions can have practical consequences. The examples on this slide concern source availability and enforceable obligations. They illustrate why licence review belongs in ordinary engineering governance, rather than being deferred until a dispute.
 :::
 
 ## Security vulnerabilities {.smaller}
@@ -616,10 +593,7 @@ CVEs can enable:
 ::::
 
 ::: {.notes}
-Examine security vulnerabilities in open-source dependencies:
-Enterprises do not just inherit the top-level libraries they declare; they inherit the entire transitive graph of third-party dependencies.
-
-Common Vulnerabilities and Exposures (CVEs) in widely used packages create pervasive, systemic exposure across hundreds of thousands of downstream applications.
+An application inherits more than the few libraries named directly in its configuration. Transitive dependencies extend that graph. A vulnerability in a widely used component can therefore affect many products whose developers did not select it directly.
 :::
 
 ## Case Studies: Vulnerabilities {.smaller}
@@ -697,9 +671,7 @@ OpenSSL Memory Leak
 :::
 
 ::: {.notes}
-Discuss prominent real-world security vulnerabilities:
-- Log4Shell (CVE-2021-44228): A critical JNDI remote code execution vulnerability in `log4j-core` that affected vulnerable Log4j deployments across numerous enterprise systems.
-- Heartbleed (CVE-2014-0160): A catastrophic buffer over-read in OpenSSL that allowed attackers to extract cryptographic private keys from active server memory.
+Log4Shell and Heartbleed illustrate different kinds of dependency vulnerability. One involved remote code execution in vulnerable logging deployments; the other exposed data from server memory. Both show why knowing which versions are deployed matters when an incident is announced.
 :::
 
 ## Sustainability risks {.smaller}
@@ -757,10 +729,7 @@ FOSS project at your product's heart = its sustainability is **your** sustainabi
 :::
 
 ::: {.notes}
-Discuss open-source sustainability and maintainer burnout:
-Many critical dependencies rely on small maintainer teams or single individuals.
-
-When maintainers face burnout, financial pressure, or unconstructive demands, critical packages become unmaintained, abandoned, or subject to abrupt licence changes.
+The health of a dependency also depends on its maintainers. A small team may face financial pressure, burnout, or growing demands from downstream users. A technically useful package still needs a sustainable way to receive fixes and releases.
 :::
 
 ## Case Studies: Sustainability Failures {.smaller}
@@ -838,15 +807,13 @@ Maintainer Protest
 :::
 
 ::: {.notes}
-Examine case studies of sustainability failures:
-- left-pad (2016): An eleven-line JavaScript package unpublished from npm broke thousands of builds across major tech companies, illustrating extreme transitive dependency fragility.
-- colors.js and faker.js (2022): The maintainer deliberately introduced infinite loops and breaking changes after growing frustrated with commercial enterprises exploiting his work without financial compensation.
+The left-pad removal disrupted builds that depended on a very small package. The changes to colors and faker illustrate a different risk: abrupt maintainer actions can affect downstream users. These incidents are reminders to consider the dependency relationship as well as the amount of code involved.
 :::
 
 # Automated Tools
 
 ::: {.notes}
-Introduce automated tooling and Software Composition Analysis (SCA) as the standard remedy for managing dependency risks at scale.
+Automated tooling helps organisations keep track of this growing dependency graph. Software composition analysis brings inventory, vulnerability, and licence information into a repeatable workflow.
 :::
 
 ## Why automate FOSS management? {.smaller}
@@ -866,10 +833,7 @@ Introduce automated tooling and Software Composition Analysis (SCA) as the stand
 :::
 
 ::: {.notes}
-Explain why automated governance is necessary:
-Manual licence audits and spreadsheet tracking are impossible when enterprise codebases contain thousands of transitive dependencies.
-
-Automated SCA tools scan dependency trees, generate Software Bills of Materials (SBOMs), detect CVEs, and enforce organizational licence policies automatically.
+Manual tracking becomes difficult as the dependency graph expands. Automated tools can generate a software bill of materials, identify known vulnerabilities, and flag licence-policy issues. The results provide a basis for review and remediation, rather than removing the need for judgement.
 :::
 
 ## Open Source Tool: Trivy {.smaller}
@@ -908,10 +872,7 @@ Free, open-source, widely adopted in CI/CD pipelines
 ::::
 
 ::: {.notes}
-Review Trivy as a premier open-source scanner:
-Maintained by Aqua Security, Trivy scans container images, filesystems, git repositories, and Kubernetes configurations for vulnerabilities, misconfigurations, and licence compliance.
-
-It is lightweight, fast, and easily integrated into CLI workflows and local developer environments.
+Trivy is an open source example of this tooling. It can inspect several kinds of artefact, including container images and repositories, for issues such as known vulnerabilities and misconfiguration. Its command-line interface makes it suitable for automated checks.
 :::
 
 ## Commercial Tool: Black Duck {.smaller}
@@ -953,10 +914,7 @@ Enterprise support, extensive database, advanced reporting
 ::::
 
 ::: {.notes}
-Review commercial enterprise solutions, exemplified by Black Duck (Synopsys):
-Black Duck provides enterprise-grade scanning, multi-factor licence identification (including snippet and code-matching analysis), automated SBOM generation, and legal policy workflows.
-
-It is tailored for enterprise M&A due diligence, legal compliance departments, and deep software supply chain audits.
+Black Duck illustrates a commercial approach to software composition analysis. Its capabilities include code and licence identification, component inventories, and policy workflows. Such tools can support compliance teams and organisations examining complex software supply chains.
 :::
 
 ## Integrating tools into your workflow {.smaller}
@@ -991,16 +949,13 @@ flowchart LR
 ```
 
 ::: {.notes}
-Demonstrate how to integrate automated tooling throughout the software development lifecycle:
-- In the IDE: Real-time feedback for developers when introducing new libraries.
-- Pre-commit & pull requests: Automated checks blocking PRs that introduce forbidden licences or critical CVEs.
-- Continuous Integration & Deployment: Automated build gates and regular periodic vulnerability rescanning of production artefacts.
+Checks are useful at several points in development. An editor can provide early feedback, a pull request can flag a new dependency problem, and continuous integration can enforce agreed gates. Periodic rescanning matters too, because a deployed dependency may become known to be vulnerable after release.
 :::
 
 # Worth it?
 
 ::: {.notes}
-Transition into the business justification: weighing the risks against the benefits of FOSS adoption.
+With those risks in view, let’s return to the value of open source and the purpose of managing it well.
 :::
 
 ## Is FOSS worth the risk? {.smaller}
@@ -1044,10 +999,7 @@ But the answer is YES! ✓
 ::::
 
 ::: {.notes}
-Address the central question: Is FOSS worth the risk?
-The answer is an unequivocal yes. Building proprietary software without open source would require reinvention of operating systems, databases, web servers, and cryptographic libraries.
-
-The goal is not to eliminate open source, but to manage its consumption with the same engineering rigour applied to proprietary code.
+Open source remains a foundation of enterprise software. Rebuilding every operating system, database, and web server independently would be impractical. The useful question is how to manage the software we rely on with appropriate engineering rigour.
 :::
 
 ## The modern stack is FOSS {.smaller}
@@ -1115,16 +1067,13 @@ You're already using FOSS everywhere. The question isn't *whether* to use it, bu
 :::
 
 ::: {.notes}
-Illustrate that modern enterprise software is already fundamentally open source:
-Linux powers cloud infrastructure; Kubernetes orchestrates workloads; PostgreSQL and MySQL store data; Python, Go, and Rust drive application logic.
-
-FOSS is not an alternative to enterprise software; it is the infrastructure upon which enterprise software is constructed.
+Linux, Kubernetes, databases, and programming languages are examples of the open source foundations in a modern stack. This is infrastructure that enterprise software already depends on, rather than an isolated optional feature.
 :::
 
 # Summary
 
 ::: {.notes}
-Transition into the conclusion: reviewing key takeaways and actionable recommendations.
+The practical response combines an accurate inventory, an understanding of obligations, repeatable checks, and support for the projects that make the product possible.
 :::
 
 ## Key takeaways {.smaller}
@@ -1160,11 +1109,7 @@ Transition into the conclusion: reviewing key takeaways and actionable recommend
 :::
 
 ::: {.notes}
-Summarise the key takeaways:
-- Know what you use: Maintain an accurate, living inventory and SBOM for all applications.
-- Understand your obligations: Establish clear internal policies distinguishing permissible licences from high-risk copyleft dependencies.
-- Automate detection: Embed SCA tools into CI/CD pipelines to catch vulnerabilities and licence violations before code reaches production.
-- Give back: Support critical open-source projects through sponsorships, bug reports, and upstream contributions to sustain the ecosystem.
+Know which components you ship and keep that inventory current. Establish a process for licence and vulnerability findings, automate the checks that can be repeated, and contribute to the health of critical dependencies. These practices connect governance with the everyday work of building software.
 :::
 
 # Thank You
@@ -1190,7 +1135,7 @@ Check out my other [slide decks](https://www.indrapatil.com/presentations/) on s
 :::
 
 ::: {.notes}
-Conclude the presentation, thank the audience for their time, and open the floor to questions and discussion.
+Thank you for listening. Questions about dependency management, tooling, and the examples in this presentation are welcome.
 :::
 
 ## References {.smaller data-visibility="uncounted"}
@@ -1218,5 +1163,5 @@ Conclude the presentation, thank the audience for their time, and open the floor
 :::
 
 ::: {.notes}
-Provide references, official licence texts, and reading recommendations for attendees seeking to explore FOSS legal frameworks and security tooling further.
+The references link to licence texts, case studies, and security-tool documentation. They provide the detail behind this overview and a starting point for examining a particular dependency or use case.
 :::
