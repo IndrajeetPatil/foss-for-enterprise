@@ -77,15 +77,8 @@ underlines, reduced motion, and screen-reader announcements.
 Run `just install` again after `just clean`, which removes installed extensions.
 
 The `accessibility.html` helper handles scrollable code, slide-menu focus,
-vertical-slide semantics, and tabset keyboard navigation. It is a shared
-fleet-wide helper and is kept byte-identical across all decks, which
-`check-template-drift.yaml` enforces. This deck has no tabsets, so the tabset
-branch is inert here: it installs a listener that never matches an element.
-Do not strip it locally — that would fail the drift check and re-fragment the
-shared template.
-The extension's slide-menu patch and accessibility settings panel are disabled
-as in the reference deck: version 0.2.3 introduces ARIA and contrast failures in
-those components.
+and vertical-slide semantics. The extension's slide-menu patch and accessibility
+settings panel are disabled because they introduce ARIA and contrast failures.
 
 Use `just axe` to inspect slides, fragments, and menu panels in presentation and
 scroll views. Normal builds omit the axe checker.
