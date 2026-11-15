@@ -9,6 +9,7 @@ every change.
 
 - **Single-file deck.** All slides live in `index.qmd`; do not split it. Follow
   the layout patterns of neighbouring slides.
+
 - **Design specification.** The visual design follows [DESIGN.md](DESIGN.md);
   respect it when creating or modifying slides, components,
   styling, colours, and typography. Keep the theme `dracula` and the format
@@ -17,34 +18,43 @@ every change.
   `style.css`. Inline `style` backgrounds on fenced divs reuse colours already
   defined in `DESIGN.md` and `index.qmd`; do not invent new ones. New widgets
   follow the naming patterns already in `style.css`.
+
 - **Sources.** Every factual claim has a source citation at the bottom of its
   slide in a small-font centred div. Keep this pattern.
+
 - **Spelling and punctuation.** Use British spelling in prose (colour, licence,
   catalogue, artefact) and the Oxford comma in lists of three or more. Leave
   code, identifiers, file names, URLs, quotations, and proper names (`license`
   in YAML, `color` in `style.css`) as they are.
+
 - **Spoken notes.** The read-aloud control speaks the `.notes` content. Write
   complete, audience-facing narration; keep staging cues, private reminders,
   and delivery checklists outside these blocks.
+
 - **Accessibility.** Images must have `fig-alt` text; raw HTML widgets use
   `role="img"` and `aria-label`. Read
   [`.agents/skills/check-accessibility/SKILL.md`](.agents/skills/check-accessibility/SKILL.md)
   before changing markup, styles, widgets, menus or the a11y setup, and for
   any accessibility audit.
+
 - **Icons.** Icons are HTML spans backed by only the required SVG path data in
   `style.css`; no icon font or Quarto icon extension. When adding one, add only
   its mask data, preserve the source licence attribution, and keep an
   accessible label where the icon conveys meaning.
+
 - **Mermaid.** Keep diagrams as Mermaid source; do not replace them with
   pre-rendered SVGs to shrink the bundle.
+
 - **No code execution.** The front matter sets `execute: eval: false`; code
   blocks are display-only. Do not enable `eval: true` unless the deck genuinely
   needs computed output. Mermaid chunks are the exception: document-level
   `eval` also suppresses diagrams, so each keeps its `%%| eval: true`.
+
 - **Python dependencies.** The deck declares `jupyter: python3`; the virtualenv
   only satisfies Quarto's engine. Depend only on `ipykernel`, `nbclient` and
   `pyyaml`. Do not add the `jupyter` metapackage: it pulls in JupyterLab and
   Notebook and only attracts irrelevant security alerts.
+
 - **Discoverability files.** Update `meta-tags.html` when the title,
   description, or social card changes, and `llms.txt` / `llms-full.txt` (and
   their `.well-known/` mirrors) when the content changes significantly.
@@ -83,6 +93,7 @@ every change.
   `IndrajeetPatil/workflows`: pushes to `main` build and deploy to GitHub
   Pages, pull requests build without deploying. Do not inline or modify that
   workflow here.
+
 - Reference `IndrajeetPatil/workflows` reusable workflows as `@main`, never a
   commit SHA. The owner maintains them and is the only person who can
   contribute to this repository, so there is no external-contributor risk, and
@@ -90,5 +101,6 @@ every change.
   `actions/unpinned-tag`, zizmor `unpinned-uses`) flag this by design: do not
   report it or propose a pin; dismiss such alerts as "won't fix" with this
   reason.
-- `check-link-rot.yaml` checks external links on pushes, pull requests and
-  weekly (Sunday 00:00 UTC); list false positives in `.lycheeignore`.
+
+- `check-link-rot.yaml` checks external links on pushes, pull requests, and
+  weekly (Sunday 00:00 UTC); configure exclusions in `lychee.toml`.
