@@ -767,7 +767,7 @@ Package Removal
 :::
 
 ::: {style="font-size: 1.2em; font-weight: bold; text-align: center; margin-top: 8px; margin-bottom: 8px;"}
-[core-js (2023)](https://www.theregister.com/2023/02/15/corejs_russia_open_source/)
+[core-js (2023)](https://www.theregister.com/software/2023/02/15/core-js-maintainer-complains-open-source-is-broken/1280029)
 :::
 
 ::: {style="background-color: #d2b5ff; color: #282a36; padding: 4px 8px; border-radius: 5px; text-align: center; font-weight: bold; margin-bottom: 10px; font-size: 0.9em;"}
@@ -1148,11 +1148,11 @@ Thank you for listening. Questions about dependency management, tooling, and the
 
 - GNU Project. "GNU General Public License v2.0." <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>
 
-- Open Source Initiative. "MIT License." <https://opensource.org/licenses/MIT>
+- Open Source Initiative. "MIT License." <https://opensource.org/license/MIT>
 
 - U.S. House of Representatives. "The Equifax Data Breach Report." December 2018.
 
-- Aqua Security. "Trivy Documentation." <https://aquasecurity.github.io/trivy/>
+- Aqua Security. "Trivy Documentation." <https://trivy.dev/>
 
 - Black Duck. "Black Duck Documentation." <https://docs.blackduck.com/>
 
